@@ -42,8 +42,13 @@ export default function ContactPage() {
                 <Mail className="h-4 w-4 text-emerald-500" />
               </div>
               <div>
-                <div className="text-xs text-zinc-400">Role</div>
-                <div className="font-medium text-zinc-900 dark:text-zinc-100">Founder & Full Stack Engineer</div>
+                <div className="text-xs text-zinc-400">Direct Inquiries</div>
+                <a
+                  href="mailto:ahmedHussien1352@gmail.com"
+                  className="font-medium text-zinc-900 dark:text-zinc-100 hover:text-emerald-500 transition-colors"
+                >
+                  ahmedHussien1352@gmail.com
+                </a>
               </div>
             </div>
 
@@ -52,8 +57,8 @@ export default function ContactPage() {
                 <MapPin className="h-4 w-4 text-emerald-500" />
               </div>
               <div>
-                <div className="text-xs text-zinc-400">Focus</div>
-                <div className="font-medium text-zinc-900 dark:text-zinc-100">Cloud Architecture & Web Systems</div>
+                <div className="text-xs text-zinc-400">Location & Availability</div>
+                <div className="font-medium text-zinc-900 dark:text-zinc-100">Menofia, Egypt &bull; Remote Worldwide</div>
               </div>
             </div>
           </div>

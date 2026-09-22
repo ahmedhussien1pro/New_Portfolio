@@ -90,7 +90,7 @@ export function Footer() {
           {/* Right: Social & Quick Actions */}
           <div className="flex items-center gap-3">
             <a
-              href="https://github.com"
+              href="https://github.com/Eng-Ahmed-Hussien"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg p-2 text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
@@ -99,7 +99,7 @@ export function Footer() {
               <GithubIcon className="h-4 w-4" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/ahmed-hussien-front-end-developer/"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-lg p-2 text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-100 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"

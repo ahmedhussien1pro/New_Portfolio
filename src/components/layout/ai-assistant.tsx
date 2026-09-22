@@ -28,7 +28,7 @@ export function AIAssistant() {
     {
       id: "welcome",
       sender: "assistant",
-      text: "Hi! I am Ahmed's AI Engineering Assistant. Ask me anything about his architecture, CyberLabs, NestJS, Next.js, or cloud infrastructure!",
+      text: "Greetings. I am Ahmed Hussien's technical assistant. Feel free to ask about his backend architectures with NestJS, production-grade Next.js frontends, or cloud infrastructure management across DigitalOcean and Cloudflare.",
       time: "Just now",
     },
   ]);
@@ -119,13 +119,13 @@ export function AIAssistant() {
                 </div>
                 <div>
                   <h3 className="text-xs font-semibold text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
-                    CyberLabs AI Copilot
+                    CyberLabs Assistant
                     <span className="rounded bg-emerald-500/10 px-1 py-0.2 text-[9px] font-mono text-emerald-500">
-                      v1.5
+                      online
                     </span>
                   </h3>
                   <p className="text-[10px] text-zinc-500">
-                    Trained on Ahmed&apos;s Engineering Architecture
+                    Ahmed Hussien &bull; Systems & Architecture
                   </p>
                 </div>
               </div>
