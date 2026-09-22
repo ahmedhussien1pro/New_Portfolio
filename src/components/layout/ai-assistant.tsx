@@ -119,7 +119,7 @@ export function AIAssistant() {
                 </div>
                 <div>
                   <h3 className="text-xs font-semibold text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
-                    CyberLabs Assistant
+                    Ahmed&apos;s AI Assistant
                     <span className="rounded bg-emerald-500/10 px-1 py-0.2 text-[9px] font-mono text-emerald-500">
                       online
                     </span>

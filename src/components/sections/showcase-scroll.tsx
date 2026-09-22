@@ -9,11 +9,7 @@ import {
   Database,
   Shield,
   Zap,
-  Globe,
   RefreshCw,
-  Layers,
-  Terminal,
-  ArrowUpRight,
   Sparkles,
   Play,
   CheckCircle,
@@ -36,7 +32,7 @@ export function ShowcaseScrollSection() {
   const [logEntries, setLogEntries] = useState<string[]>([
     "[08:42:01.102] INGRESS: POST /api/v1/auth/verify - 200 OK (11ms)",
     "[08:42:01.144] REDIS: Cache HIT key:session_8fa931b (0.6ms)",
-    "[08:42:01.201] TELEMETRY: InfluxDB batch flushed 450 data points (4ms)",
+    "[08:42:01.201] STREAM: Binary demuxed WebSocket frame dispatched (2.4ms)",
     "[08:42:01.260] WAF: Cloudflare challenge passed for IP 194.26.29.1",
   ]);
 
@@ -64,11 +60,11 @@ export function ShowcaseScrollSection() {
       requests: "482/s",
     },
     {
-      name: "telemetry-stream",
-      runtime: "Node.js + WebSockets",
+      name: "stream-pipeline",
+      runtime: "Node.js + WebSockets (<300ms)",
       port: ":4002",
       status: "healthy",
-      latency: "4.1ms",
+      latency: "3.8ms",
       requests: "640/s",
     },
     {
@@ -90,20 +86,20 @@ export function ShowcaseScrollSection() {
   ];
 
   return (
-    <section className="relative w-full border-t border-zinc-800/50 bg-black/40 overflow-hidden">
+    <section className="relative w-full py-6 sm:py-10 border-t border-zinc-800/50 bg-black/40 overflow-hidden">
       <ContainerScroll
         titleComponent={
-          <div className="space-y-4 mb-4">
-            <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800/80 bg-zinc-950/80 px-4 py-1.5 text-xs font-mono text-zinc-400 backdrop-blur-md">
+          <div className="space-y-2 mb-2">
+            <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800/80 bg-zinc-950/80 px-3.5 py-1 text-xs font-mono text-zinc-400 backdrop-blur-md">
               <Sparkles className="h-3.5 w-3.5 text-emerald-400" />
-              <span>Showcase &bull; The Beast Mode Experience</span>
+              <span>Full Stack Production Telemetry</span>
             </div>
-            <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-zinc-100">
-              CyberLabs Fleet Telemetry
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-100">
+              High-Availability Systems Console
             </h2>
-            <p className="text-sm sm:text-base text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-              Scroll down to unfold the perspective 3D viewport. Interact directly with live production
-              metrics, switch telemetry clusters, and simulate server load.
+            <p className="text-xs sm:text-sm text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+              Scroll down to unfold the perspective 3D viewport. Interact directly with live metrics,
+              switch cluster views, and simulate real-time traffic spikes.
             </p>
           </div>
         }
@@ -123,7 +119,7 @@ export function ShowcaseScrollSection() {
             <div className="hidden sm:flex items-center gap-2 px-3 py-1 rounded-lg bg-zinc-950/80 border border-zinc-800/80 text-[11px] font-mono text-zinc-400 w-80 max-w-xs justify-center">
               <Shield className="h-3 w-3 text-emerald-400" />
               <span className="text-zinc-500">https://</span>
-              <span className="text-zinc-200">fleet.cyberlabs.cloud/telemetry</span>
+              <span className="text-zinc-200">console.production.internal/telemetry</span>
             </div>
 
             {/* Live Server Ping & Region */}
@@ -139,14 +135,14 @@ export function ShowcaseScrollSection() {
           </div>
 
           {/* Interior App Header & Navigation */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-4 py-3 bg-zinc-900/40 border-b border-zinc-800/60">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 px-3 sm:px-4 py-2 sm:py-2.5 bg-zinc-900/40 border-b border-zinc-800/60">
             <div className="flex items-center gap-2">
               <div className="h-6 w-6 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center">
                 <Cpu className="h-3.5 w-3.5 text-emerald-400" />
               </div>
-              <span className="text-xs sm:text-sm font-bold tracking-tight">CyberLabs Ops Console</span>
+              <span className="text-xs sm:text-sm font-bold tracking-tight">Production Operations Console</span>
               <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-zinc-800 text-zinc-300">
-                v3.4.2-prod
+                v3.4-stable
               </span>
             </div>
 
@@ -170,7 +166,7 @@ export function ShowcaseScrollSection() {
                     : "text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50"
                 }`}
               >
-                Fleet Nodes
+                Services
               </button>
               <button
                 onClick={() => setActiveTab("logs")}
@@ -180,7 +176,7 @@ export function ShowcaseScrollSection() {
                     : "text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50"
                 }`}
               >
-                Live Streams
+                Live Logs
               </button>
 
               {/* Action Button: Dispatch Load */}
@@ -197,7 +193,7 @@ export function ShowcaseScrollSection() {
                 {isSimulatingLoad ? (
                   <>
                     <RefreshCw className="h-3 w-3 animate-spin text-amber-400" />
-                    <span>Testing...</span>
+                    <span>Spiking...</span>
                   </>
                 ) : (
                   <>
@@ -211,15 +207,15 @@ export function ShowcaseScrollSection() {
           </div>
 
           {/* Screen Body Content */}
-          <div className="flex-1 overflow-y-auto p-3 sm:p-5 space-y-4">
+          <div className="flex-1 overflow-y-auto p-3 sm:p-4 space-y-3">
             {/* KPI Cards Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-3">
-              <div className="p-3 rounded-xl border border-zinc-800/80 bg-zinc-900/50">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+              <div className="p-2.5 rounded-xl border border-zinc-800/80 bg-zinc-900/50">
                 <div className="flex items-center justify-between text-[11px] font-mono text-zinc-400">
                   <span>Throughput</span>
                   <Activity className="h-3.5 w-3.5 text-emerald-400" />
                 </div>
-                <div className="mt-1 text-lg sm:text-2xl font-bold font-mono text-zinc-100">
+                <div className="mt-1 text-lg sm:text-xl font-bold font-mono text-zinc-100">
                   {reqCount.toLocaleString()} <span className="text-xs font-normal text-zinc-500">req/s</span>
                 </div>
                 <div className="text-[10px] text-emerald-400 mt-0.5">
@@ -227,32 +223,32 @@ export function ShowcaseScrollSection() {
                 </div>
               </div>
 
-              <div className="p-3 rounded-xl border border-zinc-800/80 bg-zinc-900/50">
+              <div className="p-2.5 rounded-xl border border-zinc-800/80 bg-zinc-900/50">
                 <div className="flex items-center justify-between text-[11px] font-mono text-zinc-400">
                   <span>Avg Latency</span>
                   <Zap className="h-3.5 w-3.5 text-cyan-400" />
                 </div>
-                <div className="mt-1 text-lg sm:text-2xl font-bold font-mono text-zinc-100">
+                <div className="mt-1 text-lg sm:text-xl font-bold font-mono text-zinc-100">
                   14.2 <span className="text-xs font-normal text-zinc-500">ms</span>
                 </div>
                 <div className="text-[10px] text-cyan-400 mt-0.5">P99 &lt; 28.5ms</div>
               </div>
 
-              <div className="p-3 rounded-xl border border-zinc-800/80 bg-zinc-900/50">
+              <div className="p-2.5 rounded-xl border border-zinc-800/80 bg-zinc-900/50">
                 <div className="flex items-center justify-between text-[11px] font-mono text-zinc-400">
                   <span>SLA Uptime</span>
                   <Shield className="h-3.5 w-3.5 text-emerald-400" />
                 </div>
-                <div className="mt-1 text-lg sm:text-2xl font-bold font-mono text-zinc-100">99.99%</div>
+                <div className="mt-1 text-lg sm:text-xl font-bold font-mono text-zinc-100">99.99%</div>
                 <div className="text-[10px] text-zinc-400 mt-0.5">0 incidents (365d)</div>
               </div>
 
-              <div className="p-3 rounded-xl border border-zinc-800/80 bg-zinc-900/50">
+              <div className="p-2.5 rounded-xl border border-zinc-800/80 bg-zinc-900/50">
                 <div className="flex items-center justify-between text-[11px] font-mono text-zinc-400">
                   <span>VPC Memory</span>
                   <Server className="h-3.5 w-3.5 text-purple-400" />
                 </div>
-                <div className="mt-1 text-lg sm:text-2xl font-bold font-mono text-zinc-100">
+                <div className="mt-1 text-lg sm:text-xl font-bold font-mono text-zinc-100">
                   {isSimulatingLoad ? "68.4%" : "42.8%"}
                 </div>
                 <div className="text-[10px] text-purple-400 mt-0.5">4.1 GB / 8 GB</div>
@@ -267,11 +263,11 @@ export function ShowcaseScrollSection() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="space-y-3"
+                  className="space-y-2.5"
                 >
                   {/* Realtime Traffic Visualization Bars */}
-                  <div className="p-3.5 rounded-xl border border-zinc-800/80 bg-zinc-900/40">
-                    <div className="flex items-center justify-between text-xs font-mono text-zinc-400 mb-2">
+                  <div className="p-3 rounded-xl border border-zinc-800/80 bg-zinc-900/40">
+                    <div className="flex items-center justify-between text-xs font-mono text-zinc-400 mb-1.5">
                       <span className="flex items-center gap-1.5 text-zinc-200">
                         <Activity className="h-3.5 w-3.5 text-emerald-400" />
                         Cluster Ingress Load Distribution
@@ -280,7 +276,7 @@ export function ShowcaseScrollSection() {
                     </div>
 
                     {/* CSS Animated Activity Bars */}
-                    <div className="flex items-end gap-1.5 h-20 pt-2">
+                    <div className="flex items-end gap-1.5 h-16 pt-1">
                       {[
                         35, 48, 62, 40, 75, 55, 68, 82, 45, 90, 60, 48, 70, 85, 95, 52, 64, 78, 88, 42,
                         65, 74, 82, 58, 69, 84, 91, 56, 72, 85, 96, 60,
@@ -303,22 +299,22 @@ export function ShowcaseScrollSection() {
 
                   {/* Architecture Badges */}
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-[11px] font-mono">
-                    <div className="p-2.5 rounded-lg border border-zinc-800/70 bg-zinc-900/30 flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <div className="p-2 rounded-lg border border-zinc-800/70 bg-zinc-900/30 flex items-center gap-2">
+                      <CheckCircle className="h-3.5 w-3.5 text-emerald-400 shrink-0" />
                       <div>
                         <div className="text-zinc-200 font-bold">Zero-Trust WAF</div>
                         <div className="text-zinc-500 text-[10px]">Cloudflare TLS 1.3 Strict</div>
                       </div>
                     </div>
-                    <div className="p-2.5 rounded-lg border border-zinc-800/70 bg-zinc-900/30 flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <div className="p-2 rounded-lg border border-zinc-800/70 bg-zinc-900/30 flex items-center gap-2">
+                      <CheckCircle className="h-3.5 w-3.5 text-emerald-400 shrink-0" />
                       <div>
                         <div className="text-zinc-200 font-bold">Microservice Mesh</div>
                         <div className="text-zinc-500 text-[10px]">NestJS + Docker Bridge</div>
                       </div>
                     </div>
-                    <div className="p-2.5 rounded-lg border border-zinc-800/70 bg-zinc-900/30 flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-emerald-400 shrink-0" />
+                    <div className="p-2 rounded-lg border border-zinc-800/70 bg-zinc-900/30 flex items-center gap-2">
+                      <CheckCircle className="h-3.5 w-3.5 text-emerald-400 shrink-0" />
                       <div>
                         <div className="text-zinc-200 font-bold">Stateless Auth</div>
                         <div className="text-zinc-500 text-[10px]">JWT + Redis Revocation</div>
@@ -349,14 +345,14 @@ export function ShowcaseScrollSection() {
                     <tbody className="divide-y divide-zinc-800/60 text-zinc-300">
                       {services.map((svc) => (
                         <tr key={svc.name} className="hover:bg-zinc-800/30 transition-colors">
-                          <td className="px-3 py-2.5 font-bold text-zinc-100 flex items-center gap-1.5">
+                          <td className="px-3 py-2 font-bold text-zinc-100 flex items-center gap-1.5">
                             <span className="h-2 w-2 rounded-full bg-emerald-400" />
                             {svc.name}
                           </td>
-                          <td className="px-3 py-2.5 text-zinc-400 hidden sm:table-cell">{svc.runtime}</td>
-                          <td className="px-3 py-2.5 text-emerald-400/80">{svc.port}</td>
-                          <td className="px-3 py-2.5">{svc.latency}</td>
-                          <td className="px-3 py-2.5">
+                          <td className="px-3 py-2 text-zinc-400 hidden sm:table-cell">{svc.runtime}</td>
+                          <td className="px-3 py-2 text-emerald-400/80">{svc.port}</td>
+                          <td className="px-3 py-2">{svc.latency}</td>
+                          <td className="px-3 py-2">
                             <span className="px-1.5 py-0.5 rounded text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
                               ONLINE
                             </span>
@@ -374,7 +370,7 @@ export function ShowcaseScrollSection() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="p-3 rounded-xl border border-zinc-800/80 bg-zinc-950 font-mono text-[11px] space-y-1.5 text-zinc-400"
+                  className="p-3 rounded-xl border border-zinc-800/80 bg-zinc-950 font-mono text-[11px] space-y-1 text-zinc-400"
                 >
                   <div className="flex items-center justify-between text-zinc-500 text-[10px] pb-1 border-b border-zinc-900">
                     <span>Cluster Live Log Stream (stdout)</span>

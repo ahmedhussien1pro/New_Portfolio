@@ -14,11 +14,11 @@ export function InteractiveTerminal() {
   const [inputVal, setInputVal] = useState("");
   const [history, setHistory] = useState<CommandOutput[]>([
     {
-      command: "cyberlabs --version",
+      command: "ahmed-cli --version",
       output: (
         <div className="space-y-1 text-emerald-400">
-          <div>CyberLabs Core Engine v2.4.0 [x86_64-linux]</div>
-          <div className="text-zinc-400">Founder & Lead Engineer: Ahmed Hussien</div>
+          <div>Ahmed Hussien Systems CLI v2.4.0 [x86_64-linux]</div>
+          <div className="text-zinc-400">Senior Full Stack Software Engineer & Cloud Architect</div>
           <div className="text-zinc-500">Type <span className="text-emerald-400">help</span> for available commands.</div>
         </div>
       ),
@@ -49,7 +49,7 @@ export function InteractiveTerminal() {
               <div><span className="text-emerald-400 font-bold">projects</span> — Shipped case studies & repos</div>
               <div><span className="text-emerald-400 font-bold">experience</span> — Career timeline & mentorship</div>
               <div><span className="text-emerald-400 font-bold">certs</span> — List verified credentials & authorities</div>
-              <div><span className="text-emerald-400 font-bold">fleet</span> — CyberLabs microservices topology</div>
+              <div><span className="text-emerald-400 font-bold">fleet</span> — Production microservices topology</div>
               <div><span className="text-emerald-400 font-bold">ping</span> — Probe live network latency</div>
               <div><span className="text-emerald-400 font-bold">clear</span> — Reset terminal history</div>
             </div>
@@ -61,7 +61,7 @@ export function InteractiveTerminal() {
         outputNode = (
           <div className="space-y-1 text-zinc-300">
             <div className="font-bold text-zinc-100">Ahmed Hussien</div>
-            <div className="text-emerald-400 text-xs">Full Stack Software Engineer & Founder at CyberLabs</div>
+            <div className="text-emerald-400 text-xs">Senior Full Stack Software Engineer & Cloud Architect</div>
             <p className="text-xs text-zinc-400 leading-relaxed">
               Specialized in modular NestJS architectures, production Next.js App Router frontends, and cloud orchestration across DigitalOcean and Cloudflare. 15+ shipped client platforms, 140+ mentees.
             </p>

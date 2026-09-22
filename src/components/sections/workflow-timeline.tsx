@@ -59,13 +59,13 @@ export function WorkflowTimeline() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className="relative w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-zinc-800/50 overflow-hidden"
+      className="relative w-full py-14 sm:py-18 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-zinc-800/50 overflow-hidden"
     >
       {/* Aceternity Background Beams */}
       <BackgroundBeams />
 
       {/* Header */}
-      <div className="flex flex-col items-center text-center space-y-3 mb-20 max-w-3xl mx-auto">
+      <div className="flex flex-col items-center text-center space-y-2 mb-8 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800/80 bg-zinc-950/60 px-3.5 py-1 text-xs font-mono text-zinc-400 backdrop-blur-md">
           <ShieldCheck className="h-3.5 w-3.5 text-emerald-400" />
           <span>Engineering Lifecycle</span>
@@ -73,13 +73,13 @@ export function WorkflowTimeline() {
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
           Enterprise Delivery Workflow
         </h2>
-        <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
+        <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed max-w-2xl">
           Standardized end-to-end development lifecycle: from requirement specification and Jira epics to zero-downtime edge runtime deployment.
         </p>
       </div>
 
       {/* Desktop Animated Timeline Connecting Track */}
-      <div className="relative mb-12 hidden lg:block">
+      <div className="relative mb-6 hidden lg:block">
         {/* Background Track Line */}
         <div className="absolute top-1/2 left-8 right-8 -translate-y-1/2 h-0.5 bg-zinc-800/80" />
 

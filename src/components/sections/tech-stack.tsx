@@ -92,33 +92,33 @@ export function TechStackSection() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className="relative w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-zinc-800/50"
+      className="relative w-full py-14 sm:py-18 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-zinc-800/50"
     >
       {/* Section Header */}
-      <div className="flex flex-col items-center text-center space-y-3 mb-12 max-w-3xl mx-auto">
+      <div className="flex flex-col items-center text-center space-y-2 mb-8 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800/80 bg-zinc-950/60 px-3.5 py-1 text-xs font-mono text-zinc-400 backdrop-blur-md">
           <Layers className="h-3.5 w-3.5 text-emerald-400" />
           <span>The Tech Ecosystem</span>
         </div>
-        <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-zinc-100">
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
           Interactive Neural Systems Map
         </h2>
-        <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
+        <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed max-w-2xl">
           Explore the decoupled infrastructure topology. Hover over cluster paths to trace live synapsing data packets and system specifications.
         </p>
       </div>
 
       {/* Interactive Neural Node Map */}
-      <div className="mb-16">
+      <div className="mb-10">
         <InteractiveNodeMap />
       </div>
 
       {/* 3 Architectural Tier Breakdown Heading */}
-      <div className="flex flex-col items-center text-center space-y-2 mb-10 max-w-2xl mx-auto">
-        <span className="text-xs font-mono uppercase tracking-widest text-emerald-400 font-semibold">
+      <div className="flex flex-col items-center text-center space-y-1.5 mb-6 max-w-2xl mx-auto">
+        <span className="text-[11px] font-mono uppercase tracking-widest text-emerald-400 font-semibold">
           Architectural Topology
         </span>
-        <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-200">
+        <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-zinc-200">
           Three-Tier Production Pipeline
         </h3>
       </div>

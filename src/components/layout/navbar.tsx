@@ -62,11 +62,11 @@ export function Navbar() {
           <div className="flex flex-col">
             <span className="font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 text-sm flex items-center gap-1.5">
               Ahmed Hussien
-              <span className="rounded bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-medium text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                CyberLabs
+              <span className="rounded bg-emerald-500/10 px-1.5 py-0.5 text-[10px] font-mono text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                Senior
               </span>
             </span>
-            <span className="text-[11px] text-zinc-500 font-normal">
+            <span className="text-[11px] text-zinc-500 font-mono">
               Full Stack Software Engineer
             </span>
           </div>

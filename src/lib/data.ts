@@ -94,7 +94,7 @@ export interface CertificateItem {
 
 export const AHMED_PROFILE = {
   name: "Ahmed Hussien",
-  title: "Full Stack Software Engineer & Founder at CyberLabs",
+  title: "Senior Full Stack Software Engineer & Cloud Architect",
   email: "ahmedHussien1352@gmail.com",
   location: "Menofia, Egypt / Remote Worldwide",
   avatar: "/assets/myImage.png",

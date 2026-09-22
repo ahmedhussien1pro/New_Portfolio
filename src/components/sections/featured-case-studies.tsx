@@ -46,10 +46,10 @@ export function FeaturedCaseStudies({ projects }: FeaturedCaseStudiesProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className="relative w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-zinc-800/50"
+      className="relative w-full py-14 sm:py-18 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-zinc-800/50"
     >
       {/* Section Header */}
-      <div className="flex flex-col items-center text-center space-y-3 mb-16 max-w-3xl mx-auto">
+      <div className="flex flex-col items-center text-center space-y-2 mb-8 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800/60 bg-zinc-950/40 px-3.5 py-1 text-xs font-mono text-zinc-400 backdrop-blur-md">
           <Server className="h-3.5 w-3.5 text-zinc-400" />
           <span>Interactive Architectural Case Studies</span>
@@ -57,12 +57,12 @@ export function FeaturedCaseStudies({ projects }: FeaturedCaseStudiesProps) {
         <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
           Featured Production Architectures
         </h2>
-        <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
+        <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed max-w-2xl">
           In-depth technical dissections of production systems engineered for microservice decoupling, low-latency streaming, and high concurrency.
         </p>
 
         {/* 2-Project Tab Switcher */}
-        <div className="flex items-center gap-2 pt-4">
+        <div className="flex items-center gap-2 pt-2">
           <button
             onClick={() => setActiveTab("cyberlabs")}
             className={`px-4 py-2 rounded-xl text-xs font-mono transition-all cursor-pointer ${

@@ -19,12 +19,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ahmed Hussien | Full Stack Software Engineer & Founder at CyberLabs",
+  title: "Ahmed Hussien | Senior Full Stack Software Engineer & Cloud Architect",
   description:
-    "Elite Portfolio of Ahmed Hussien — Full Stack Software Engineer & Founder at CyberLabs. Specialized in Next.js, NestJS, and pure software cloud architecture.",
+    "Production portfolio of Ahmed Hussien — Senior Full Stack Software Engineer & Cloud Solutions Architect. Specialized in Next.js 16, NestJS, TypeScript, and high-performance cloud infrastructure.",
   keywords: [
     "Ahmed Hussien",
-    "CyberLabs",
+    "Senior Software Engineer",
     "Full Stack Engineer",
     "Software Engineer",
     "NestJS",

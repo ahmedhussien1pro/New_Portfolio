@@ -19,6 +19,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Spotlight } from "@/components/aceternity/spotlight";
 import { CardContainer, CardBody, CardItem } from "@/components/aceternity/card-3d";
+import { Hero3DScene } from "@/components/three/hero-3d-scene";
 import { AHMED_PROFILE } from "@/lib/data";
 
 function GithubIcon({ className }: { className?: string }) {
@@ -48,19 +49,19 @@ export function HeroSection() {
       tagline: "DigitalOcean VPC & Cloudflare Edge",
       description: "Private network isolation, automated Docker orchestration, and Zero-Trust WAF packet filtering.",
       icon: Cloud,
-      stat: "FRA1 VPC",
+      stat: "VPC Subnet",
     },
     {
       title: "Microservices Architecture",
       tagline: "Decoupled NestJS Fleet",
-      description: "Role-isolated administration, REST gateway, and compute daemon with strict type contracts.",
+      description: "Stateless JWT authentication, custom ExecutionContext role guards, and Redis caching.",
       icon: Server,
-      stat: "3 Services",
+      stat: "Decoupled",
     },
     {
-      title: "CI/CD Automation",
-      tagline: "GitHub Actions & Ephemeral Previews",
-      description: "Automated test suites, linting validation, and instant branch deployments to edge runtime.",
+      title: "CI/CD & DevOps",
+      tagline: "Automated Build & Verify",
+      description: "Automated test suites, linting validation, and ephemeral branch deployments to edge runtime.",
       icon: GitBranch,
       stat: "Zero Downtime",
     },
@@ -69,31 +70,34 @@ export function HeroSection() {
       tagline: "High Availability & Telemetry",
       description: "Sub-300ms stream latency, MongoDB Atlas replica pools, and real-time distributed tracing.",
       icon: Activity,
-      stat: "99.9% SLA",
+      stat: "99.99% SLA",
     },
   ];
 
   return (
-    <section className="relative w-full py-24 sm:py-32 flex flex-col justify-center items-center overflow-hidden">
+    <section className="relative w-full py-12 sm:py-16 flex flex-col justify-center items-center overflow-hidden">
       {/* Precision Mouse-tracking Spotlight Effect */}
       <Spotlight fill="rgba(16, 185, 129, 0.16)" />
 
+      {/* Interactive Three.js 3D Background Canvas */}
+      <Hero3DScene />
+
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full">
         {/* Split Hero Grid: Text & 3D Tilt Card */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
           {/* Left Column: Focused Identity & CTAs */}
-          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+          <div className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-4">
             {/* Status Pill */}
             <motion.div
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35 }}
             >
-              <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800/80 bg-zinc-950/60 px-3.5 py-1 text-xs font-mono text-zinc-400 backdrop-blur-md shadow-xs">
+              <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800/80 bg-zinc-950/70 px-3.5 py-1 text-xs font-mono text-zinc-300 backdrop-blur-md shadow-xs">
                 <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span>CyberLabs Core Infrastructure</span>
+                <span>Available for Senior Software Engineering Roles</span>
                 <span className="text-zinc-600">&bull;</span>
-                <span className="text-emerald-400 font-medium">Operational</span>
+                <span className="text-emerald-400 font-medium">Worldwide Remote</span>
               </div>
             </motion.div>
 
@@ -102,13 +106,13 @@ export function HeroSection() {
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.06 }}
-              className="space-y-3"
+              className="space-y-2"
             >
               <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-zinc-100 leading-[1.08]">
                 Ahmed Hussien
               </h1>
               <div className="text-lg sm:text-xl lg:text-2xl font-mono font-medium text-emerald-400">
-                Full Stack Software Engineer & Founder at CyberLabs
+                Senior Full Stack Software Engineer & Cloud Architect
               </div>
             </motion.div>
 
@@ -119,8 +123,8 @@ export function HeroSection() {
               transition={{ duration: 0.4, delay: 0.12 }}
               className="text-sm sm:text-base text-zinc-400 max-w-2xl leading-relaxed font-normal"
             >
-              Specializing in modular backend architectures with NestJS, production-grade Next.js App Router platforms,
-              and cloud infrastructure orchestration across DigitalOcean and Cloudflare.
+              Architecting modular microservice backends with NestJS & Node.js, high-performance
+              Next.js 16 App Router platforms, and Zero-Trust cloud infrastructure across DigitalOcean VPC and Cloudflare.
             </motion.p>
 
             {/* Action CTAs */}
@@ -136,7 +140,7 @@ export function HeroSection() {
                   size="default"
                   className="gap-2 text-xs font-semibold cursor-pointer shadow-[0_0_20px_rgba(16,185,129,0.25)] hover:shadow-[0_0_30px_rgba(16,185,129,0.4)]"
                 >
-                  <span>View Architecture</span>
+                  <span>Explore Architectures</span>
                   <ArrowRight className="h-3.5 w-3.5" />
                 </Button>
               </Link>
@@ -188,43 +192,43 @@ export function HeroSection() {
           {/* Right Column: Aceternity 3D Tilt Glassmorphism Card */}
           <div className="lg:col-span-5 flex justify-center w-full">
             <CardContainer className="inter-var w-full max-w-md">
-              <CardBody className="bg-zinc-950/60 relative group/card border border-zinc-800/80 w-full rounded-3xl p-6 sm:p-7 backdrop-blur-md shadow-2xl transition-all hover:border-emerald-500/40 hover:shadow-[0_0_40px_rgba(16,185,129,0.15)]">
+              <CardBody className="bg-zinc-950/70 relative group/card border border-zinc-800/80 w-full rounded-3xl p-5 sm:p-6 backdrop-blur-xl shadow-2xl transition-all hover:border-emerald-500/40 hover:shadow-[0_0_40px_rgba(16,185,129,0.15)]">
                 {/* Header item */}
-                <div className="flex items-center justify-between border-b border-zinc-800/60 pb-4 mb-5">
+                <div className="flex items-center justify-between border-b border-zinc-800/60 pb-3 mb-4">
                   <CardItem
                     translateZ={30}
                     className="flex items-center gap-2 text-xs font-mono text-zinc-400"
                   >
                     <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                    <span>CyberLabs System Lead</span>
+                    <span>Distributed Systems Lead</span>
                   </CardItem>
                   <CardItem
                     translateZ={30}
                     className="rounded-md bg-emerald-500/10 px-2 py-0.5 text-[10px] font-mono text-emerald-400 border border-emerald-500/20"
                   >
-                    VPC: 10.114.0.0/16
+                    Zero-Trust Cloud
                   </CardItem>
                 </div>
 
                 {/* Portrait with Glowing Frame */}
                 <CardItem
                   translateZ={60}
-                  className="w-full flex justify-center my-3"
+                  className="w-full flex justify-center my-2"
                 >
-                  <div className="relative h-44 w-44 sm:h-48 sm:w-48 rounded-2xl overflow-hidden border-2 border-emerald-500/30 bg-gradient-to-b from-zinc-800/80 via-zinc-900 to-zinc-950 p-1.5 shadow-xl group-hover/card:border-emerald-500/60 transition-colors">
+                  <div className="relative h-40 w-40 sm:h-44 sm:w-44 rounded-2xl overflow-hidden border-2 border-emerald-500/30 bg-gradient-to-b from-zinc-800/80 via-zinc-900 to-zinc-950 p-1.5 shadow-xl group-hover/card:border-emerald-500/60 transition-colors">
                     <Image
                       src="/assets/myImage.png"
                       alt="Ahmed Hussien"
                       fill
                       priority
-                      sizes="(max-width: 640px) 176px, 192px"
+                      sizes="(max-width: 640px) 160px, 176px"
                       className="object-contain object-bottom grayscale transition-all duration-500 hover:grayscale-0 group-hover/card:grayscale-0"
                     />
                   </div>
                 </CardItem>
 
                 {/* Persona Title & Role */}
-                <div className="text-center space-y-1 mt-4">
+                <div className="text-center space-y-1 mt-3">
                   <CardItem
                     translateZ={50}
                     className="text-lg font-bold text-zinc-100 w-full"
@@ -235,16 +239,16 @@ export function HeroSection() {
                     translateZ={40}
                     className="text-xs font-mono text-emerald-400 w-full"
                   >
-                    Founder & System Administrator @ CyberLabs
+                    Senior Full Stack Software Engineer
                   </CardItem>
                 </div>
 
                 {/* Floating Tech Chips */}
                 <CardItem
                   translateZ={35}
-                  className="flex flex-wrap items-center justify-center gap-1.5 pt-4 mt-4 border-t border-zinc-800/60"
+                  className="flex flex-wrap items-center justify-center gap-1.5 pt-3 mt-3 border-t border-zinc-800/60"
                 >
-                  {["NestJS 10", "Next.js 16", "Cloudflare WAF", "Docker VPC"].map((tech) => (
+                  {["NestJS 10", "Next.js 16", "TypeScript", "Docker VPC", "MongoDB"].map((tech) => (
                     <span
                       key={tech}
                       className="rounded-md border border-zinc-800/80 bg-zinc-900/60 px-2 py-0.5 text-[10px] font-mono text-zinc-300"
@@ -257,7 +261,7 @@ export function HeroSection() {
                 {/* Quick Impact Stats */}
                 <CardItem
                   translateZ={25}
-                  className="grid grid-cols-3 gap-2 pt-4 text-center font-mono text-[10px]"
+                  className="grid grid-cols-3 gap-2 pt-3 text-center font-mono text-[10px]"
                 >
                   <div className="rounded-lg border border-zinc-800/60 bg-zinc-900/40 p-1.5">
                     <div className="font-bold text-zinc-100 text-xs">15+</div>
@@ -268,7 +272,7 @@ export function HeroSection() {
                     <div className="text-zinc-500">Mentees</div>
                   </div>
                   <div className="rounded-lg border border-zinc-800/60 bg-zinc-900/40 p-1.5">
-                    <div className="font-bold text-emerald-400 text-xs">99.9%</div>
+                    <div className="font-bold text-emerald-400 text-xs">99.99%</div>
                     <div className="text-zinc-500">Uptime</div>
                   </div>
                 </CardItem>
@@ -278,7 +282,7 @@ export function HeroSection() {
         </div>
 
         {/* Bento Grid: 4 Premium Stats with Framer Motion Hover Scale */}
-        <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
           {focusAreas.map((area, idx) => {
             const Icon = area.icon;
             return (
@@ -288,15 +292,15 @@ export function HeroSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.35, delay: idx * 0.08 }}
-                whileHover={{ scale: 1.03, y: -4 }}
-                className="rounded-2xl border border-zinc-800/80 bg-zinc-950/60 p-5 backdrop-blur-md transition-all hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.12)] flex flex-col justify-between group cursor-pointer"
+                whileHover={{ scale: 1.03, y: -3 }}
+                className="rounded-2xl border border-zinc-800/80 bg-zinc-950/60 p-4 sm:p-5 backdrop-blur-md transition-all hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.12)] flex flex-col justify-between group cursor-pointer"
               >
-                <div className="space-y-3">
+                <div className="space-y-2.5">
                   <div className="flex items-center justify-between">
                     <div className="p-2 rounded-lg border border-zinc-800/80 bg-zinc-900/60 text-zinc-400 group-hover:text-emerald-400 group-hover:border-emerald-500/30 transition-colors">
                       <Icon className="h-4 w-4" />
                     </div>
-                    <span className="text-[10px] font-mono text-zinc-500 rounded bg-zinc-900/80 px-2 py-0.5 border border-zinc-800/60">
+                    <span className="text-[10px] font-mono text-zinc-400 rounded bg-zinc-900/80 px-2 py-0.5 border border-zinc-800/60">
                       {area.stat}
                     </span>
                   </div>

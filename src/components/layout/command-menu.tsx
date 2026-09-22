@@ -60,7 +60,7 @@ export function CommandMenu() {
       category: "Navigation",
     },
     {
-      title: "Engineering Experience & CyberLabs",
+      title: "Engineering Experience & Career",
       icon: Laptop,
       action: () => router.push("/experience"),
       category: "Navigation",
@@ -78,7 +78,7 @@ export function CommandMenu() {
       category: "Navigation",
     },
     {
-      title: "CyberLabs Admin Studio Console",
+      title: "Portfolio Admin & CMS Studio",
       icon: ShieldCheck,
       action: () => router.push("/admin"),
       category: "Administration",
@@ -185,7 +185,7 @@ export function CommandMenu() {
               <div className="flex items-center justify-between border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-950/40 px-4 py-2 text-[11px] text-zinc-500">
                 <span className="flex items-center gap-1">
                   <Sparkles className="h-3 w-3 text-emerald-500" />
-                  Ahmed Hussien &bull; Founder at CyberLabs
+                  Ahmed Hussien &bull; Senior Full Stack Software Engineer
                 </span>
                 <span>Press ↵ to select</span>
               </div>

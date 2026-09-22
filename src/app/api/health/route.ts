@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
   return NextResponse.json({
     status: "operational",
-    system: "CyberLabs Core Gateway",
+    system: "Edge Ingress Gateway",
     environment: "production",
     uptime: "99.99%",
     timestamp: new Date().toISOString(),

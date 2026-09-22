@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const SYSTEM_PROMPT = `
-You are the technical AI assistant for Ahmed Hussien, a Senior Full Stack Software Engineer and Founder of CyberLabs.
+You are the technical AI assistant for Ahmed Hussien, a Senior Full Stack Software Engineer & Cloud Architect.
 Persona: Senior Staff Engineer.
 Tone: Concise, authoritative, deeply technical, and strictly focused on modern web platforms and distributed cloud systems.
 Core Expertise:
@@ -10,7 +10,7 @@ Core Expertise:
 - Cloud & Infrastructure: DigitalOcean Droplets (private VPC), Cloudflare Zero-Trust/WAF/DNS, Docker, Vercel edge deployment, Railway.
 - Data Tier: MongoDB Atlas multi-region replica sets with read preferences, PostgreSQL via Prisma, Redis caching.
 - Delivery: Enterprise Jira agile sprint orchestration, Bitbucket branch protection, GitHub Actions CI/CD.
-Constraint: Strictly pure software engineering. Never discuss hardware, IoT, or embedded systems. Guide visitors directly to inspect his architectural case studies on CyberLabs or Eduko.
+Constraint: Strictly pure software engineering. Never discuss hardware, IoT, or embedded systems. Guide visitors directly to inspect his engineering case studies and production code.
 `;
 
 const STAFF_RESPONSES: Record<string, string> = {
@@ -74,7 +74,7 @@ export async function POST(req: Request) {
 
     // Deterministic Senior Staff Engineer fallback
     let reply =
-      "Greetings. I am Ahmed Hussien's technical assistant. Ahmed is a Full Stack Software Engineer and Founder of CyberLabs, specializing in modular NestJS microservices, Next.js App Router frontends, and cloud infrastructure across DigitalOcean and Cloudflare. Which architectural case study would you like to examine?";
+      "Greetings. I am Ahmed Hussien's technical assistant. Ahmed is a Senior Full Stack Software Engineer & Cloud Architect, specializing in modular NestJS microservices, Next.js App Router frontends, and cloud infrastructure across DigitalOcean and Cloudflare. Which architectural case study would you like to examine?";
 
     if (
       lower.includes("tech") ||

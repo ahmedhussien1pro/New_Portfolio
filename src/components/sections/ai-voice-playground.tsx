@@ -23,7 +23,7 @@ interface Message {
 }
 
 const PRESET_QUESTIONS = [
-  "How is CyberLabs microservice fleet decoupled?",
+  "How do you decouple microservices in NestJS?",
   "Explain your Next.js caching and revalidation strategy.",
   "How do you implement Zero-Trust VPC on DigitalOcean?",
   "How did you achieve <300ms video streaming on Canvas?",
@@ -148,25 +148,25 @@ export function AIVoicePlayground() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-      className="relative w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-zinc-800/50"
+      className="relative w-full py-14 sm:py-18 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-zinc-800/50"
     >
       {/* Section Header */}
-      <div className="flex flex-col items-center text-center space-y-3 mb-14 max-w-3xl mx-auto">
+      <div className="flex flex-col items-center text-center space-y-2 mb-6 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800/80 bg-zinc-950/60 px-3.5 py-1 text-xs font-mono text-zinc-400 backdrop-blur-md">
           <Sparkles className="h-3.5 w-3.5 text-emerald-400" />
           <span>AI & Voice Synthesis Engine</span>
         </div>
-        <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-zinc-100">
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
           The Architectural AI Playground
         </h2>
-        <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
+        <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed max-w-2xl">
           Query Ahmed&apos;s Staff Engineer assistant. Integrated with browser Web Speech API (TTS) to
           synthesize and vocalize responses in real time.
         </p>
       </div>
 
       {/* Preset Questions Chips */}
-      <div className="flex flex-wrap items-center justify-center gap-2 mb-8 max-w-4xl mx-auto">
+      <div className="flex flex-wrap items-center justify-center gap-2 mb-6 max-w-4xl mx-auto">
         {PRESET_QUESTIONS.map((q, idx) => (
           <button
             key={idx}

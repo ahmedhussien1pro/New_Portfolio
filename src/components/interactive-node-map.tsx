@@ -37,11 +37,11 @@ const NODES: Node[] = [
   // Central Core Hub
   {
     id: "core",
-    name: "CyberLabs Core Gateway",
+    name: "Central Ingress Gateway",
     category: "core",
     x: 50,
     y: 50,
-    role: "Central Ingress & Telemetry Orchestrator",
+    role: "Unified Edge Ingress & Telemetry Orchestrator",
     spec: "Dual-Stack VPC Router • Port 4000",
     latency: "< 5ms",
     icon: Cpu,
@@ -297,7 +297,7 @@ export function InteractiveNodeMap() {
       </div>
 
       {/* Interactive Canvas / SVG Node Graph Container */}
-      <div className="relative w-full h-[520px] sm:h-[580px] rounded-3xl border border-zinc-800/80 bg-zinc-950/80 p-4 overflow-hidden backdrop-blur-xl shadow-2xl">
+      <div className="relative w-full h-[440px] sm:h-[480px] rounded-3xl border border-zinc-800/80 bg-zinc-950/80 p-4 overflow-hidden backdrop-blur-xl shadow-2xl">
         {/* Subtle grid background */}
         <div
           className="absolute inset-0 opacity-[0.12] pointer-events-none"

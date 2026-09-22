@@ -230,18 +230,18 @@ export async function CleanCodeStudio() {
   return (
     <section
       id="clean-code-studio"
-      className="relative w-full py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-zinc-800/50"
+      className="relative w-full py-14 sm:py-18 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-zinc-800/50"
     >
       {/* Section Header */}
-      <div className="flex flex-col items-center text-center space-y-3 mb-16 max-w-3xl mx-auto">
+      <div className="flex flex-col items-center text-center space-y-2 mb-8 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800/80 bg-zinc-950/60 px-3.5 py-1 text-xs font-mono text-zinc-400 backdrop-blur-md">
           <Code2 className="h-3.5 w-3.5 text-emerald-400" />
           <span>Live Code Studio</span>
         </div>
-        <h2 className="text-3xl sm:text-5xl font-bold tracking-tight text-zinc-100">
+        <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-100">
           Production-Grade Clean Code
         </h2>
-        <p className="text-sm sm:text-base text-zinc-400 leading-relaxed">
+        <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed max-w-2xl">
           Inspect authentic architecture patterns. Toggle between Next.js 16 caching, NestJS execution
           guards, and air-gapped VPC orchestration.
         </p>

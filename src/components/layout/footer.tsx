@@ -62,8 +62,8 @@ export function Footer() {
                 Ahmed Hussien
               </span>
               <span className="text-zinc-300 dark:text-zinc-700">&bull;</span>
-              <span className="text-xs text-zinc-500 font-medium">
-                Founder at CyberLabs
+              <span className="text-xs text-zinc-500 font-mono">
+                Senior Full Stack Software Engineer
               </span>
             </div>
             <p className="text-xs text-zinc-400 dark:text-zinc-500">
