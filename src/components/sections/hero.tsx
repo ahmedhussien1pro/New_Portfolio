@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -182,6 +183,70 @@ export function HeroSection() {
               transition={{ duration: 0.5, delay: 0.15 }}
               className="grid grid-cols-1 sm:grid-cols-2 gap-3"
             >
+              {/* Bento Card 0: Authentic Developer Persona & Technical Lead */}
+              <div className="sm:col-span-2 rounded-2xl border border-zinc-200/90 dark:border-zinc-800/90 bg-white/80 dark:bg-zinc-900/80 p-5 backdrop-blur-2xl shadow-lg transition-all hover:border-emerald-500/50 hover:shadow-[0_0_40px_rgba(16,185,129,0.12)]">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                  {/* Portrait with Glowing Ring Pedestal */}
+                  <div className="relative group shrink-0">
+                    <div className="relative h-24 w-24 sm:h-28 sm:w-28 rounded-2xl overflow-hidden border-2 border-emerald-500/30 bg-gradient-to-b from-zinc-800 to-zinc-950 p-1 shadow-md">
+                      <Image
+                        src="/assets/myImage.png"
+                        alt="Ahmed Hussien"
+                        fill
+                        priority
+                        sizes="(max-width: 640px) 96px, 112px"
+                        className="object-contain object-bottom transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                    {/* Active Ping Beacon */}
+                    <div className="absolute -bottom-1 -right-1 flex h-6 w-6 items-center justify-center rounded-full bg-zinc-950 border border-emerald-500/40">
+                      <span className="relative flex h-3 w-3">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Persona Details & Availability */}
+                  <div className="flex-1 text-center sm:text-left space-y-2">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                      <div>
+                        <h3 className="text-base font-bold text-zinc-900 dark:text-zinc-100 flex items-center justify-center sm:justify-start gap-2">
+                          Ahmed Hussien
+                          <span className="text-[10px] font-mono font-normal px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                            Founder
+                          </span>
+                        </h3>
+                        <p className="text-xs font-mono text-zinc-500 dark:text-zinc-400">
+                          CyberLabs &bull; Menofia, Egypt / Remote
+                        </p>
+                      </div>
+
+                      <span className="inline-flex items-center justify-center sm:justify-end gap-1 text-[11px] font-mono text-emerald-600 dark:text-emerald-400">
+                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+                        Available for Senior Roles
+                      </span>
+                    </div>
+
+                    {/* Quick Metric Badges */}
+                    <div className="grid grid-cols-3 gap-2 pt-1">
+                      <div className="rounded-lg border border-zinc-200/60 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-950/70 p-2 text-center">
+                        <div className="text-xs font-bold font-mono text-zinc-900 dark:text-zinc-100">15+</div>
+                        <div className="text-[10px] text-zinc-500 font-mono">Shipped Apps</div>
+                      </div>
+                      <div className="rounded-lg border border-zinc-200/60 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-950/70 p-2 text-center">
+                        <div className="text-xs font-bold font-mono text-zinc-900 dark:text-zinc-100">140+</div>
+                        <div className="text-[10px] text-zinc-500 font-mono">IEEE Mentees</div>
+                      </div>
+                      <div className="rounded-lg border border-zinc-200/60 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-950/70 p-2 text-center">
+                        <div className="text-xs font-bold font-mono text-emerald-600 dark:text-emerald-400">99.9%</div>
+                        <div className="text-[10px] text-zinc-500 font-mono">SLA Uptime</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Bento Card 1: Microservices Fleet */}
               <div className="sm:col-span-2 rounded-xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-zinc-900/70 p-4 sm:p-5 backdrop-blur-xl shadow-sm transition-all hover:border-zinc-400 dark:hover:border-zinc-700">
                 <div className="flex items-center justify-between border-b border-zinc-100 dark:border-zinc-800 pb-3 mb-3">

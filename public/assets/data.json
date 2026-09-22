@@ -1,0 +1,594 @@
+[
+  {
+    "id": 0,
+    "img": "/assets/projects/AdminDashboardV1.jpeg",
+    "live_demo": "https://admin-dashboard-v1-phi.vercel.app/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Admin_Dashboard-v1",
+    "description": "Admin Dashboard is a responsive web application template built with React and Tailwind CSS. It provides a clean and modern design for managing administrative tasks and data visualization.",
+    "title": "Admin Dashboard",
+    "technologies": ["React", "Tailwind CSS", "Admin Dashboard", "Web Application"],
+    "category": "React",
+    "status": "completed",
+    "long_description": "This project is an Admin Dashboard built with React and TailwindCSS, designed to provide a comprehensive interface for managing administrative tasks. It features a responsive layout, data visualization components, user management, analytics, and various widgets for quick access to important information. The dashboard is suitable for applications in various domains such as e-commerce, healthcare, and education, providing a user-friendly experience with modern UI/UX principles.",
+    "author": "Ahmed Hussien",
+    "created_date": "2025-04-21",
+    "duration": "2 weeks",
+    "rating": 4.5,
+    "additional_info": {
+      "framework": "React",
+      "libraries": ["React", "Tailwind CSS", "Chart.js", "React Router"],
+      "deployment": "Vercel"
+    },
+    "related_projects": [1, 2, 3, 4],
+    "screenshots": [
+      "/assets/projects/P10.jpeg",
+      "/assets/projects/P11.jpeg",
+      "/assets/projects/P12.jpeg",
+      "/assets/projects/P13.jpeg",
+      "/assets/projects/P14.jpeg",
+      "/assets/projects/P15.jpeg",
+      "/assets/projects/P16.jpeg",
+      "/assets/projects/P17.jpeg",
+      "/assets/projects/P18.jpeg"
+    ]
+  },
+  {
+    "id": 1,
+    "img": "/assets/projects/FreshCartEcommerce.jpeg",
+    "live_demo": "https://simple-fresh-cart-ecommerce.vercel.app/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Simple-Fresh-Cart-Ecommerce",
+    "description": "Fresh Cart is a modern and responsive e-commerce website template built with React and Tailwind CSS. It features a clean and elegant design for showcasing various products and shopping-related content.",
+    "title": "Fresh Cart E-commerce",
+    "technologies": ["React", "Tailwind CSS", "E-commerce", "Web Template"],
+    "category": "React",
+    "status": "completed",
+    "long_description": "Fresh Cart is a comprehensive e-commerce solution built with React and TailwindCSS. The project features product catalogs, shopping cart functionality, user authentication, payment integration, and responsive design. It's designed to provide a seamless shopping experience with modern UI/UX patterns and optimized performance for both desktop and mobile devices.",
+    "author": "Ahmed Hussien",
+    "created_date": "2025-03-15",
+    "duration": "3 weeks",
+    "rating": 4.7,
+    "additional_info": {
+      "framework": "React",
+      "libraries": ["React", "Tailwind CSS", "React Router", "Axios"],
+      "deployment": "Vercel"
+    },
+    "related_projects": [0, 2, 3],
+    "screenshots": [
+      "/assets/projects/P20.jpeg",
+      "/assets/projects/P21.jpeg",
+      "/assets/projects/P22.jpeg",
+      "/assets/projects/P23.jpeg",
+      "/assets/projects/P24.jpeg",
+      "/assets/projects/P25.jpeg"
+    ]
+  },
+  {
+    "id": 2,
+    "img": "/assets/projects/EthanPortfolioTemplate.jpeg",
+    "live_demo": "https://ethan-portfolio-template.vercel.app/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Ethan-Portfolio-Template-using-NextJs",
+    "description": "Ethan Portfolio Template is a modern and responsive portfolio template built with Next.js, Tailwind CSS and farmer motion. It showcases a clean and elegant design for presenting personal projects and skills.",
+    "title": "Ethan Portfolio Template",
+    "technologies": ["Next.js", "Tailwind CSS", "Portfolio", "Web Template"],
+    "category": "Next.js",
+    "status": "completed",
+    "long_description": "Ethan Portfolio Template is a sophisticated portfolio website built with Next.js and enhanced with Framer Motion animations. The template features smooth transitions, interactive elements, project showcases, skills sections, and contact forms. It's optimized for SEO and performance with Next.js features like SSR and image optimization.",
+    "author": "Ahmed Hussien",
+    "created_date": "2025-02-28",
+    "duration": "2.5 weeks",
+    "rating": 4.8,
+    "additional_info": {
+      "framework": "Next.js",
+      "libraries": ["Next.js", "Tailwind CSS", "Framer Motion", "React"],
+      "deployment": "Vercel"
+    },
+    "related_projects": [0, 1, 16, 17],
+    "screenshots": [
+      "/assets/projects/P30.jpeg",
+      "/assets/projects/P31.jpeg",
+      "/assets/projects/P32.jpeg",
+      "/assets/projects/P33.jpeg",
+      "/assets/projects/P34.jpeg",
+      "/assets/projects/P35.jpeg"
+    ]
+  },
+  {
+    "id": 3,
+    "img": "/assets/projects/VsCodeClone.jpeg",
+    "live_demo": "https://vs-code-clone-three.vercel.app/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Vs_code_clone",
+    "description": "A web-based code editor that mimics the look and feel of Visual Studio Code. It is built using React + TypeScript + Vite and Tailwind CSS, providing a modern and responsive design for coding tasks.",
+    "title": "VS Code Clone",
+    "technologies": ["React", "TypeScript", "Vite", "Tailwind CSS", "Code Editor"],
+    "category": "React",
+    "status": "completed",
+    "long_description": "This VS Code Clone replicates the core functionality and appearance of Visual Studio Code in a web browser. Built with React, TypeScript, and Vite, it features syntax highlighting, file management, multiple tabs, theme switching, and a responsive layout. The project demonstrates advanced React patterns and TypeScript integration for building complex web applications.",
+    "author": "Ahmed Hussien",
+    "created_date": "2025-01-20",
+    "duration": "4 weeks",
+    "rating": 4.9,
+    "additional_info": {
+      "framework": "React",
+      "libraries": ["React", "TypeScript", "Vite", "Tailwind CSS", "Monaco Editor"],
+      "deployment": "Vercel"
+    },
+    "related_projects": [0, 1, 4],
+    "screenshots": [
+      "/assets/projects/P40.jpeg",
+      "/assets/projects/P41.jpeg",
+      "/assets/projects/P42.jpeg",
+      "/assets/projects/P43.jpeg",
+      "/assets/projects/P44.jpeg",
+      "/assets/projects/P45.jpeg"
+
+    ]
+  },
+  {
+    "id": 4,
+    "img": "/assets/projects/FrontendMentorProjects.jpeg",
+    "live_demo": "https://frontend-mentor-projects-azure.vercel.app/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/frontend__mentor--projects",
+    "description": "A collection of frontend projects built using React, showcasing various design patterns and UI components. Each project is designed to be responsive and user-friendly. with 3 Mode Dark, Light and Blue mode.",
+    "title": "Frontend Mentor Projects",
+    "technologies": ["React", "Frontend Mentor", "Web Projects"],
+    "category": "React",
+    "status": "completed",
+    "long_description": "This collection showcases multiple Frontend Mentor challenges solved using React. Each project demonstrates different aspects of frontend development including responsive design, state management, API integration, and modern CSS techniques. The collection features dark, light, and blue themes, providing users with customizable viewing experiences.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-12-10",
+    "duration": "6 weeks",
+    "rating": 4.6,
+    "additional_info": {
+      "framework": "React",
+      "libraries": ["React", "CSS Modules", "React Router", "Context API"],
+      "deployment": "Vercel"
+    },
+    "related_projects": [0, 1, 3],
+    "screenshots": [
+      "/assets/projects/P50.jpeg",
+      "/assets/projects/P51.jpeg",
+      "/assets/projects/P52.jpeg",
+      "/assets/projects/P53.jpeg",
+      "/assets/projects/P54.jpeg",
+      "/assets/projects/P55.jpeg"
+    ]
+  },
+  {
+    "id": 5,
+    "img": "/assets/projects/JackPortfolioTemplate.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/Jack-portfolio-Website-Template/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Jack-portfolio-Website-Template",
+    "description": "Jack Portfolio Template is a modern and responsive portfolio template built with HTML, CSS and Custom Js. It showcases a clean and elegant design for presenting personal projects and skills.",
+    "title": "Jack Portfolio Template",
+    "technologies": ["HTML", "CSS", "JavaScript", "Portfolio", "Web Template"],
+    "category": "Landing",
+    "status": "completed",
+    "long_description": "Jack Portfolio Template is a clean and professional portfolio website built with vanilla HTML, CSS, and JavaScript. It features smooth scrolling, animated sections, project galleries, skills showcases, and contact forms. The template is fully responsive and includes modern design elements with CSS animations and JavaScript interactions.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-11-15",
+    "duration": "1.5 weeks",
+    "rating": 4.3,
+    "additional_info": {
+      "framework": "Vanilla JS",
+      "libraries": ["HTML5", "CSS3", "JavaScript", "Font Awesome"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [2, 16, 17],
+    "screenshots": [
+      "/assets/projects/P60.jpeg",
+      "/assets/projects/P61.jpeg",
+      "/assets/projects/P62.jpeg",
+      "/assets/projects/P63.jpeg",
+      "/assets/projects/P64.jpeg",
+      "/assets/projects/P65.jpeg"
+    ]
+  },
+  {
+    "id": 6,
+    "img": "/assets/projects/DineOutRestaurant.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/DineOut-Restaurant/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/DineOut-Restaurant",
+    "description": "Dine Out Restaurant is a modern and responsive restaurant website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing restaurant menus, services, and contact information.",
+    "title": "Dine Out Restaurant",
+    "technologies": ["HTML", "CSS", "JavaScript", "Restaurant", "Web Template"],
+    "category": "Landing",
+    "status": "completed",
+    "long_description": "Dine Out Restaurant is a comprehensive restaurant website featuring menu displays, reservation systems, gallery showcases, and contact information. Built with HTML, CSS, and JavaScript, it includes interactive elements like image carousels, smooth scrolling navigation, and responsive design optimized for all devices.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-10-20",
+    "duration": "2 weeks",
+    "rating": 4.4,
+    "additional_info": {
+      "framework": "Vanilla JS",
+      "libraries": ["HTML5", "CSS3", "JavaScript", "Swiper.js"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [7, 14, 15],
+    "screenshots": [
+      "/assets/projects/P70.jpeg",
+      "/assets/projects/P71.jpeg",
+      "/assets/projects/P72.jpeg",
+      "/assets/projects/P73.jpeg",
+      "/assets/projects/P74.jpeg",
+      "/assets/projects/P75.jpeg",
+      "/assets/projects/P76.jpeg",
+      "/assets/projects/P77.jpeg",
+      "/assets/projects/P78.jpeg",
+      "/assets/projects/P79.jpeg"
+    ]
+  },
+  {
+    "id": 7,
+    "img": "/assets/projects/OnlineEducation.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/Online-Education/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Online-Education",
+    "description": "Online Education is a modern and responsive online education website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing online courses, instructors, and student testimonials.",
+    "title": "Online Education",
+    "technologies": ["HTML", "CSS", "JavaScript", "Online Education", "Web Template"],
+    "category": "Landing",
+    "status": "completed",
+    "long_description": "Online Education platform is designed to showcase educational courses, instructor profiles, and student testimonials. The website features course catalogs, enrollment systems, progress tracking, and interactive learning modules. Built with responsive design principles to ensure accessibility across all devices.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-09-25",
+    "duration": "2.5 weeks",
+    "rating": 4.5,
+    "additional_info": {
+      "framework": "Vanilla JS",
+      "libraries": ["HTML5", "CSS3", "JavaScript", "AOS Animation"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [6, 18],
+    "screenshots": [
+      "/assets/projects/P80.jpeg",
+      "/assets/projects/P81.jpeg",
+      "/assets/projects/P82.jpeg",
+      "/assets/projects/P83.jpeg",
+      "/assets/projects/P84.jpeg",
+      "/assets/projects/P85.jpeg",
+      "/assets/projects/P86.jpeg",
+      "/assets/projects/P87.jpeg"
+    ]
+  },
+  {
+    "id": 8,
+    "img": "/assets/projects/AgencyLandingPage.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/Agency-Landing-Page/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Agency-Landing-Page",
+    "description": "Agency Landing Page is a modern and responsive landing page template built with Bootstrap. It features a clean and elegant design for showcasing agency services, portfolios, and contact information.",
+    "title": "Agency Landing Page",
+    "technologies": ["HTML", "CSS", "Bootstrap", "Landing Page", "Web Template"],
+    "category": "Bootstrap",
+    "status": "completed",
+    "long_description": "Agency Landing Page is a professional business website template built with Bootstrap framework. It showcases agency services, team members, portfolio projects, and client testimonials. The design features modern layouts, interactive elements, and optimized performance for lead generation and business growth.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-08-30",
+    "duration": "1.5 weeks",
+    "rating": 4.2,
+    "additional_info": {
+      "framework": "Bootstrap",
+      "libraries": ["HTML5", "CSS3", "Bootstrap", "jQuery"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [9, 10, 16],
+    "screenshots": [
+      "/assets/projects/P90.jpeg",
+      "/assets/projects/P91.jpeg",
+      "/assets/projects/P92.jpeg",
+      "/assets/projects/P93.jpeg",
+      "/assets/projects/P94.jpeg",
+      "/assets/projects/P95.jpeg",
+      "/assets/projects/P96.jpeg",
+      "/assets/projects/P97.jpeg"
+    ]
+  },
+  {
+    "id": 9,
+    "img": "/assets/projects/ArshaBootstrapTemplate.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/ITI-_Angular_Bootstrap_Task/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/ITI-_Angular_Bootstrap_Task",
+    "description": "Arsha Bootstrap Template is a modern and responsive website template built with Bootstrap. It features a clean and elegant design for showcasing various services, portfolios, and contact information.",
+    "title": "Arsha Bootstrap Template",
+    "technologies": ["HTML", "CSS", "Bootstrap", "Landing Page", "Web Template"],
+    "category": "Bootstrap",
+    "status": "completed",
+    "long_description": "Arsha Bootstrap Template is a versatile business website template featuring multiple sections for services, portfolio, team, and testimonials. Built with Bootstrap framework, it includes responsive navigation, smooth scrolling, and modern UI components suitable for various business types and professional services.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-08-10",
+    "duration": "1 week",
+    "rating": 4.1,
+    "additional_info": {
+      "framework": "Bootstrap",
+      "libraries": ["HTML5", "CSS3", "Bootstrap", "jQuery", "AOS"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [8, 10, 16],
+    "screenshots": [
+      "/assets/projects/P100.jpeg",
+      "/assets/projects/P101.jpeg",
+      "/assets/projects/P102.jpeg",
+      "/assets/projects/P103.jpeg",
+      "/assets/projects/P104.jpeg",
+      "/assets/projects/P105.jpeg",
+      "/assets/projects/P106.jpeg",
+      "/assets/projects/P107.jpeg"
+    ]
+  },
+  {
+    "id": 10,
+    "img": "/assets/projects/BootstrapBonndiTemplate.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/Bootstrap-Bonndi-Template/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Bootstrap-Bonndi-Template",
+    "description": "Bootstrap Bonndi Template is a modern and responsive website template built with Bootstrap. It features a clean and elegant design for showcasing various services, portfolios, and contact information.",
+    "title": "Bootstrap Bonndi Template",
+    "technologies": ["HTML", "CSS", "Bootstrap", "Landing Page", "Web Template"],
+    "category": "Bootstrap",
+    "status": "completed",
+    "long_description": "Bootstrap Bonndi Template is a creative and modern website template designed for agencies and creative professionals. It features unique layouts, interactive elements, portfolio showcases, and service presentations. The template is built with Bootstrap for responsive design and includes custom CSS for distinctive styling.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-07-20",
+    "duration": "1.5 weeks",
+    "rating": 4.3,
+    "additional_info": {
+      "framework": "Bootstrap",
+      "libraries": ["HTML5", "CSS3", "Bootstrap", "jQuery", "Owl Carousel"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [8, 9, 16],
+    "screenshots": [
+      "/assets/projects/P110.jpeg",
+      "/assets/projects/P111.jpeg",
+      "/assets/projects/P112.jpeg",
+      "/assets/projects/P113.jpeg",
+      "/assets/projects/P114.jpeg",
+      "/assets/projects/P111.jpeg",
+      "/assets/projects/P115.jpeg",
+      "/assets/projects/P116.jpeg"
+    ]
+  },
+  {
+    "id": 11,
+    "img": "/assets/projects/GigalandNFTMarketplace.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/Gigaland-Landing/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Gigaland-Landing",
+    "description": "Gigaland is a modern and responsive NFT marketplace template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing various NFTs, artists, and collections.",
+    "title": "Gigaland - NFT Marketplace",
+    "technologies": ["HTML", "CSS", "JavaScript", "NFT Marketplace", "Web Template"],
+    "category": "Landing",
+    "status": "completed",
+    "long_description": "Gigaland NFT Marketplace is a cutting-edge platform design for digital art and NFT trading. The website features artist profiles, NFT collections, bidding systems, and marketplace functionality. Built with modern web technologies, it includes interactive galleries, search filters, and responsive design optimized for crypto and NFT enthusiasts.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-06-15",
+    "duration": "3 weeks",
+    "rating": 4.7,
+    "additional_info": {
+      "framework": "Vanilla JS",
+      "libraries": ["HTML5", "CSS3", "JavaScript", "Web3.js", "GSAP"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [12, 13],
+    "screenshots": [
+      "/assets/projects/P120.jpeg",
+      "/assets/projects/P121.jpeg",
+      "/assets/projects/P122.jpeg",
+      "/assets/projects/P123.jpeg",
+      "/assets/projects/P124.jpeg",
+      "/assets/projects/P125.jpeg"
+    ]
+  },
+  {
+    "id": 12,
+    "img": "/assets/projects/GamingWebsite.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/Gaming_Website/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Gaming_Website",
+    "description": "Gaming Website is a modern and responsive gaming website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing various games, news, and gaming-related content.",
+    "title": "Gaming Website",
+    "technologies": ["HTML", "CSS", "JavaScript", "Gaming", "Web Template"],
+    "category": "Landing",
+    "status": "completed",
+    "long_description": "Gaming Website is an immersive platform designed for gaming enthusiasts. It features game showcases, news sections, tournament information, and community features. The website includes interactive elements, animated transitions, and responsive design optimized for gaming content and user engagement.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-05-30",
+    "duration": "2 weeks",
+    "rating": 4.4,
+    "additional_info": {
+      "framework": "Vanilla JS",
+      "libraries": ["HTML5", "CSS3", "JavaScript", "Particles.js", "AOS"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [11, 13],
+    "screenshots": [
+      "/assets/projects/P130.jpeg",
+      "/assets/projects/P131.jpeg",
+      "/assets/projects/P132.jpeg",
+      "/assets/projects/P133.jpeg",
+      "/assets/projects/P134.jpeg",
+      "/assets/projects/P135.jpeg",
+      "/assets/projects/P136.jpeg"
+    ]
+  },
+  {
+    "id": 13,
+    "img": "/assets/projects/DigitArt.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/Digit-Art/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Digit-Art",
+    "description": "Digit Art is a modern and responsive gaming website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing various games, news, and gaming-related content.",
+    "title": "Digit Art",
+    "technologies": ["HTML", "CSS", "JavaScript", "Gaming", "Web Template"],
+    "category": "Landing",
+    "status": "completed",
+    "long_description": "Digit Art is a creative platform showcasing digital artwork and gaming content. The website features artist portfolios, digital galleries, interactive showcases, and modern design elements. Built with HTML, CSS, and JavaScript, it includes smooth animations and responsive layouts for optimal viewing of digital art content.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-05-10",
+    "duration": "2 weeks",
+    "rating": 4.3,
+    "additional_info": {
+      "framework": "Vanilla JS",
+      "libraries": ["HTML5", "CSS3", "JavaScript", "Three.js", "GSAP"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [11, 12],
+    "screenshots": [
+      "/assets/projects/P140.jpeg",
+      "/assets/projects/P141.jpeg",
+      "/assets/projects/P142.jpeg",
+      "/assets/projects/P143.jpeg",
+      "/assets/projects/P144.jpeg",
+      "/assets/projects/P145.jpeg",
+      "/assets/projects/P146.jpeg",
+      "/assets/projects/P147.jpeg",
+      "/assets/projects/P148.jpeg",
+      "/assets/projects/P149.jpeg"
+    ]
+  },
+  {
+    "id": 14,
+    "img": "/assets/projects/FruitShop.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/Fruit-Shop/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Fruit-Shop",
+    "description": "Fruit Shop is a modern and responsive e-commerce website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing various fruits, products, and shopping-related content.",
+    "title": "Fruit Shop",
+    "technologies": ["HTML", "CSS", "JavaScript", "E-commerce", "Web Template"],
+    "category": "Landing",
+    "status": "completed",
+    "long_description": "Fruit Shop is an e-commerce website template designed for fresh produce and organic food retailers. It features product catalogs, shopping cart functionality, customer reviews, and delivery information. The website includes responsive design, interactive product galleries, and modern UI elements optimized for food and retail businesses.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-04-25",
+    "duration": "2 weeks",
+    "rating": 4.2,
+    "additional_info": {
+      "framework": "Vanilla JS",
+      "libraries": ["HTML5", "CSS3", "JavaScript", "Swiper.js"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [1, 6, 15],
+    "screenshots": [
+      "/assets/projects/P150.jpeg",
+      "/assets/projects/P151.jpeg",
+      "/assets/projects/P152.jpeg",
+      "/assets/projects/P153.jpeg",
+      "/assets/projects/P154.jpeg",
+      "/assets/projects/P155.jpeg",
+      "/assets/projects/P156.jpeg",
+      "/assets/projects/P157.jpeg",
+      "/assets/projects/P158.jpeg",
+      "/assets/projects/P159.jpeg"
+
+    ]
+  },
+  {
+    "id": 15,
+    "img": "/assets/projects/Et3lmBsholah.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/GDSC-M.E.T-Final-Project/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/GDSC-M.E.T-Final-Project",
+    "description": "ُEt3lm Bsholah is a modern and responsive online education website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing online courses, instructors, and student testimonials.",
+    "title": "Et3lm Bsholah",
+    "technologies": ["HTML", "CSS", "JavaScript", "Online Education", "Web Template"],
+    "category": "Landing",
+    "status": "completed",
+    "long_description": "Et3lm Bsholah is an Arabic online education platform designed to make learning accessible and engaging. The website features course offerings, instructor profiles, student progress tracking, and interactive learning modules. Built with responsive design and modern UI/UX principles to serve Arabic-speaking educational communities.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-04-05",
+    "duration": "3 weeks",
+    "rating": 4.6,
+    "additional_info": {
+      "framework": "Vanilla JS",
+      "libraries": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "AOS"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [7, 18],
+    "screenshots": [
+      "/assets/projects/P160.jpeg",
+      "/assets/projects/P161.jpeg",
+      "/assets/projects/P162.jpeg",
+      "/assets/projects/P163.jpeg",
+      "/assets/projects/P164.jpeg",
+      "/assets/projects/P165.jpeg"
+    ]
+  },
+  {
+    "id": 16,
+    "img": "/assets/projects/DanielsPortfolio.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/Daniels-Portfolio/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Daniels-Portfolio",
+    "description": "Daniels Portfolio is a modern and responsive portfolio template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing personal projects and skills.",
+    "title": "Daniels Portfolio",
+    "technologies": ["HTML", "CSS", "JavaScript", "Portfolio", "Web Template"],
+    "category": "Bootstrap",
+    "status": "completed",
+    "long_description": "Daniels Portfolio is a professional portfolio website template built with Bootstrap framework. It showcases personal projects, skills, experience, and contact information. The template features smooth scrolling, animated sections, responsive design, and modern UI components suitable for developers and creative professionals.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-03-20",
+    "duration": "1.5 weeks",
+    "rating": 4.4,
+    "additional_info": {
+      "framework": "Bootstrap",
+      "libraries": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [2, 5, 17],
+    "screenshots": [
+      "/assets/projects/P170.jpeg",
+      "/assets/projects/P171.jpeg",
+      "/assets/projects/P172.jpeg",
+      "/assets/projects/DanielsPortfolio.jpeg"
+    ]
+  },
+  {
+    "id": 17,
+    "img": "/assets/projects/DevSparkPortfolioTemplate.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/DevSpark-Portfolio-Tamplete/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/DevSpark-Portfolio-Tamplete",
+    "description": "DevSpark Portfolio Template is a modern and responsive portfolio template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing personal projects and skills.",
+    "title": "DevSpark Portfolio",
+    "technologies": ["HTML", "CSS", "JavaScript", "Portfolio", "Web Template"],
+    "category": "Landing",
+    "status": "completed",
+    "long_description": "DevSpark Portfolio Template is a dynamic and modern portfolio website designed for developers and tech professionals. It features project showcases, skill demonstrations, experience timelines, and contact forms. The template includes interactive elements, smooth animations, and responsive design optimized for professional presentation.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-03-05",
+    "duration": "2 weeks",
+    "rating": 4.5,
+    "additional_info": {
+      "framework": "Vanilla JS",
+      "libraries": ["HTML5", "CSS3", "JavaScript", "GSAP", "Typed.js"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [2, 5, 16],
+    "screenshots": [
+      "/assets/projects/P180.jpeg",
+      "/assets/projects/P181.jpeg",
+      "/assets/projects/P182.jpeg",
+      "/assets/projects/P183.jpeg",
+      "/assets/projects/P184.jpeg",
+      "/assets/projects/P185.jpeg",
+      "/assets/projects/P186.jpeg"
+    ]
+  },
+  {
+    "id": 18,
+    "img": "/assets/projects/GithubUserSearch.jpeg",
+    "live_demo": "https://eng-ahmed-hussien.github.io/Github-User-Search/",
+    "github": "https://github.com/Eng-Ahmed-Hussien/Github-User-Search",
+    "description": "Github-User-Search is a web application that allows users to search for GitHub users and view their profiles, repositories, and other information. It is built using HTML, CSS, and JavaScript, providing a clean and user-friendly interface.",
+    "title": "Github User Search",
+    "technologies": ["HTML", "CSS", "JavaScript", "GitHub API", "Web Application"],
+    "category": "Landing",
+    "status": "completed",
+    "long_description": "Github User Search is a web application that integrates with the GitHub API to provide comprehensive user search functionality. Users can search for GitHub profiles, view repositories, followers, following, and detailed statistics. The application features responsive design, error handling, and real-time data fetching for an optimal user experience.",
+    "author": "Ahmed Hussien",
+    "created_date": "2024-02-15",
+    "duration": "1 week",
+    "rating": 4.3,
+    "additional_info": {
+      "framework": "Vanilla JS",
+      "libraries": ["HTML5", "CSS3", "JavaScript", "GitHub API", "Fetch API"],
+      "deployment": "GitHub Pages"
+    },
+    "related_projects": [4],
+    "screenshots": [
+      "/assets/projects/GithubUserSearch.jpeg",
+      "/assets/projects/P190.jpeg",
+      "/assets/projects/P191.jpeg"
+    ]
+  }
+]

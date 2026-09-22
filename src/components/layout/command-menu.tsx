@@ -15,6 +15,8 @@ import {
   ExternalLink,
   Activity,
   Send,
+  Award,
+  ShieldCheck,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -64,10 +66,22 @@ export function CommandMenu() {
       category: "Navigation",
     },
     {
+      title: "Verified Accreditations & Certificates",
+      icon: Award,
+      action: () => router.push("/certificates"),
+      category: "Navigation",
+    },
+    {
       title: "Contact & Inquiries",
       icon: Send,
       action: () => router.push("/contact"),
       category: "Navigation",
+    },
+    {
+      title: "CyberLabs Admin Studio Console",
+      icon: ShieldCheck,
+      action: () => router.push("/admin"),
+      category: "Administration",
     },
     {
       title: "Download CV (Ahmed Hussien)",

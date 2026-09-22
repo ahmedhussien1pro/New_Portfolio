@@ -1,0 +1,46 @@
+[
+  {
+    "organization": "Self Employed",
+    "role": "Freelance Front‑End Developer",
+    "start": "October 2023",
+    "end": "Present"
+  },
+  {
+    "organization": "IEEE MSB",
+    "role": "Front‑End Trainee",
+    "start": "September 2021",
+    "end": "June 2023"
+  },
+  {
+    "organization": "GDSC MET",
+    "role": "Front‑End Trainee",
+    "start": "November 2022",
+    "end": "October 2023"
+  },
+  {
+    "organization": "GDSC Menofia",
+    "role": "Front‑End Trainee",
+    "start": "September 2022",
+    "end": "February 2022"
+  },
+  {
+    "organization": "IEEE MSB – Menofia University",
+    "role": "Front‑End Instructor",
+    "volunteer": true,
+    "start": "March 2024",
+    "end": "May 2025"
+  },
+  {
+    "organization": "IEEE Delta Academy – Menofia University",
+    "role": "Front‑End Instructor",
+    "volunteer": true,
+    "start": "June 2024",
+    "end": "January 2025"
+  },
+  {
+    "organization": "ITI Menoufia (Summer Training)",
+    "role": "Front‑End Developer Using Angular (Internship)",
+    "start": "July 2024",
+    "end": "August 2024"
+  }
+]

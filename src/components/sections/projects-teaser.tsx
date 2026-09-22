@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight,
@@ -12,22 +13,33 @@ import {
   Code2,
   CheckCircle2,
   Terminal,
+  Images,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { CASE_STUDIES } from "@/lib/data";
+import { CASE_STUDIES, ProjectCaseStudy } from "@/lib/data";
 import { ArchitectureDiagram } from "@/components/architecture-diagram";
 
-export function ProjectsTeaser() {
-  const [activeTab, setActiveTab] = useState("cyberlabs");
-  const study = CASE_STUDIES.find((s) => s.id === activeTab) || CASE_STUDIES[0];
+interface ProjectsTeaserProps {
+  projects?: ProjectCaseStudy[];
+}
+
+export function ProjectsTeaser({ projects = CASE_STUDIES }: ProjectsTeaserProps) {
+  const activeProjects = projects.filter((p) => p.published !== false);
+  const featuredIds = ["cyberlabs", "admin-dashboard", "fresh-cart", "vs-code-clone", "eduko", "gigaland-nft"];
+  const featuredProjects = activeProjects.filter((p) => featuredIds.includes(p.id)).length > 0
+    ? activeProjects.filter((p) => featuredIds.includes(p.id))
+    : activeProjects.slice(0, 6);
+
+  const [activeTab, setActiveTab] = useState(featuredProjects[0]?.id || activeProjects[0]?.id || "cyberlabs");
+  const study = activeProjects.find((s) => s.id === activeTab) || activeProjects[0];
 
   return (
     <section className="relative w-full py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-zinc-200/60 dark:border-zinc-800/60">
       {/* Header */}
-      <div className="flex flex-col items-center text-center space-y-3 mb-12">
+      <div className="flex flex-col items-center text-center space-y-3 mb-10">
         <div className="inline-flex items-center gap-2 rounded-md border border-zinc-200 dark:border-zinc-800 bg-white/60 dark:bg-zinc-900/60 px-3 py-1 text-xs font-mono text-zinc-600 dark:text-zinc-300">
           <Server className="h-3.5 w-3.5 text-emerald-500" />
-          <span>Case Studies</span>
+          <span>Case Studies Spotlight</span>
         </div>
         <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
           Architectural Case Studies
@@ -36,9 +48,9 @@ export function ProjectsTeaser() {
           Deep technical breakdowns of production systems, decoupled microservices, and performance engineering.
         </p>
 
-        {/* Case Study Switcher Tabs */}
+        {/* Featured Case Study Switcher Tabs */}
         <div className="flex flex-wrap items-center justify-center gap-2 pt-4">
-          {CASE_STUDIES.map((item) => (
+          {featuredProjects.map((item) => (
             <button
               key={item.id}
               onClick={() => setActiveTab(item.id)}
@@ -159,11 +171,25 @@ export function ProjectsTeaser() {
 
             {/* Right: Interactive Flow Diagram */}
             <div className="lg:col-span-6">
-              <ArchitectureDiagram flow={study.architectureFlow} />
+              <ArchitectureDiagram projectId={study.id} />
             </div>
           </div>
         </motion.div>
       </AnimatePresence>
+
+      {/* Footer link to full catalog */}
+      <div className="mt-8 flex justify-center">
+        <Link href="/projects">
+          <Button
+            variant="outline"
+            size="default"
+            className="gap-2 text-xs font-mono border-zinc-300 dark:border-zinc-800 bg-white/50 dark:bg-zinc-900/50 hover:border-emerald-500/40 hover:text-emerald-500 transition-all cursor-pointer shadow-xs"
+          >
+            <span>Explore All {activeProjects.length} Projects & Microservices</span>
+            <ArrowRight className="h-3.5 w-3.5" />
+          </Button>
+        </Link>
+      </div>
     </section>
   );
 }

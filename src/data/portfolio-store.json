@@ -1,0 +1,3527 @@
+{
+  "profile": {
+    "name": "Ahmed Hussien",
+    "title": "Full Stack Software Engineer & Founder at CyberLabs",
+    "email": "ahmedHussien1352@gmail.com",
+    "location": "Menofia, Egypt / Remote Worldwide",
+    "avatar": "/assets/myImage.png",
+    "github": "https://github.com/Eng-Ahmed-Hussien",
+    "linkedin": "https://www.linkedin.com/in/ahmed-hussien-front-end-developer/",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/ahmed-hussien-front-end-developer/",
+      "github": "https://github.com/Eng-Ahmed-Hussien",
+      "oldPortfolio": "https://ahmedhussienportfolio-gamma.vercel.app/"
+    },
+    "highlightRepos": [
+      {
+        "name": "cyberlabs-backend",
+        "repoUrl": "https://github.com/Eng-Ahmed-Hussien/cyberlabs-backend",
+        "description": "Modular NestJS microservice gateway with JWT authentication & MongoDB Atlas pools.",
+        "tech": [
+          "NestJS",
+          "TypeScript",
+          "MongoDB Atlas",
+          "Redis"
+        ]
+      },
+      {
+        "name": "cyberlabs-admin",
+        "repoUrl": "https://github.com/Eng-Ahmed-Hussien/cyberlabs-admin",
+        "description": "Secure administrative dashboard console with custom ExecutionContext role guards.",
+        "tech": [
+          "Next.js 15",
+          "Tailwind CSS",
+          "RBAC",
+          "TypeScript"
+        ]
+      },
+      {
+        "name": "cyberlabs-vm-service",
+        "repoUrl": "https://github.com/Eng-Ahmed-Hussien/cyberlabs-vm-service",
+        "description": "DigitalOcean droplet provisioning RPC node with capacity threshold checks.",
+        "tech": [
+          "Node.js",
+          "Docker",
+          "DigitalOcean API",
+          "Private VPC"
+        ]
+      },
+      {
+        "name": "ahmedhabiby/Eduko1",
+        "repoUrl": "https://github.com/ahmedhabiby/Eduko1",
+        "description": "Modern educational platform frontend built with Next.js App Router and automated CI/CD.",
+        "tech": [
+          "Next.js 16",
+          "React 19",
+          "Vercel",
+          "GitHub Actions"
+        ]
+      }
+    ],
+    "bio": "Specializing in modular backend architectures with NestJS, production-grade Next.js frontends, and cloud infrastructure management across DigitalOcean and Cloudflare. Dedicated to decoupled system design, strict type safety, and automated continuous delivery.",
+    "technologies": {
+      "backend": [
+        "NestJS",
+        "Node.js",
+        "Express",
+        "REST APIs",
+        "Microservices",
+        "JWT & RBAC"
+      ],
+      "frontend": [
+        "Next.js 15/16",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS",
+        "HTML5 Canvas"
+      ],
+      "cloud": [
+        "DigitalOcean Droplets",
+        "Cloudflare (DNS, WAF, Edge)",
+        "Docker",
+        "Vercel",
+        "Railway"
+      ],
+      "database": [
+        "MongoDB Atlas",
+        "PostgreSQL",
+        "Redis Cache",
+        "Mongoose",
+        "Prisma"
+      ],
+      "workflows": [
+        "Jira (Agile/Epics)",
+        "Bitbucket",
+        "GitHub Actions",
+        "CI/CD Pipelines"
+      ]
+    },
+    "metrics": [
+      {
+        "label": "Core Microservices",
+        "value": "3 Services"
+      },
+      {
+        "label": "Architecture",
+        "value": "Decoupled"
+      },
+      {
+        "label": "Version Control",
+        "value": "Bitbucket & GitHub"
+      },
+      {
+        "label": "Cloud Providers",
+        "value": "DigitalOcean / Cloudflare"
+      }
+    ],
+    "availabilityStatus": "available",
+    "statusText": "Available for Senior Full Stack & Cloud Engineering Roles",
+    "logo": "/assets/logo.svg",
+    "cv": "/Ahmed_Hussien_CV.pdf"
+  },
+  "projects": [
+    {
+      "id": "cyberlabs",
+      "title": "CyberLabs Microservices Fleet",
+      "subtitle": "Modular NestJS Architecture & Multi-Node Administration",
+      "tagline": "Orchestration of cyberlabs-admin, core backend APIs, and vm-service nodes with role-isolated permissions and MongoDB Atlas cluster management.",
+      "category": "Backend Architecture",
+      "architectureLayers": [
+        "NestJS Modular Architecture",
+        "MongoDB Atlas Cluster Management",
+        "DigitalOcean Droplet Orchestration",
+        "Cloudflare Zero-Trust/DNS"
+      ],
+      "liveUrl": "https://admin-dashboard-v1-phi.vercel.app/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/cyberlabs-admin",
+      "coverImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80",
+      "highlightRepos": [
+        {
+          "name": "cyberlabs-admin",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/cyberlabs-admin",
+          "description": "Zero-Trust administrative console with custom NestJS RBAC guards.",
+          "tech": [
+            "Next.js 15",
+            "TypeScript",
+            "Tailwind CSS"
+          ]
+        },
+        {
+          "name": "cyberlabs-backend",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/cyberlabs-backend",
+          "description": "Core transactional microservice API communicating over private VPC networking.",
+          "tech": [
+            "NestJS",
+            "MongoDB Atlas",
+            "Redis"
+          ]
+        },
+        {
+          "name": "cyberlabs-vm-service",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/cyberlabs-vm-service",
+          "description": "Compute node provisioning daemon managing DigitalOcean droplet lifecycles.",
+          "tech": [
+            "Node.js",
+            "Docker",
+            "Private RPC"
+          ]
+        }
+      ],
+      "overview": "CyberLabs operates as a decoupled microservices architecture designed to isolate administrative operations from public endpoints. The platform partitions workloads across three primary services: cyberlabs-admin for privileged cluster control, backend for transactional business logic, and vm-service for provisioning cloud compute nodes.",
+      "problem": "As infrastructure instances and administration complexity grew, running a monolithic codebase caused deployment coupling, risk of unauthorized access across administrative actions, and high database write contention.",
+      "architectureDetails": {
+        "frontend": "Next.js 15 App Router, TypeScript, Tailwind CSS, customized accessible dashboard panels.",
+        "backend": "NestJS microservices communicating via secure internal HTTP/gRPC interfaces, with JWT role-based guards and metadata reflection.",
+        "infrastructure": "DigitalOcean Droplets in a VPC private network, Cloudflare Zero-Trust edge access and SSL termination.",
+        "data": "MongoDB Atlas multi-region replica set with dedicated indexes and connection pooling via Mongoose."
+      },
+      "architectureFlow": [
+        {
+          "from": "Client (Admin)",
+          "to": "Cloudflare Edge",
+          "protocol": "HTTPS / TLS 1.3",
+          "label": "Zero-Trust Edge Auth"
+        },
+        {
+          "from": "Cloudflare Edge",
+          "to": "Next.js Admin Console",
+          "protocol": "HTTP/2",
+          "label": "Edge Routing"
+        },
+        {
+          "from": "Next.js Admin Console",
+          "to": "NestJS API Gateway",
+          "protocol": "JWT Bearer / mTLS",
+          "label": "Signed Requests"
+        },
+        {
+          "from": "NestJS API Gateway",
+          "to": "vm-service Node",
+          "protocol": "Private VPC RPC",
+          "label": "Compute Node Allocation"
+        },
+        {
+          "from": "NestJS API Gateway",
+          "to": "MongoDB Atlas Cluster",
+          "protocol": "mongodb+srv",
+          "label": "Read/Write Sharded Replicas"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Service Separation between cyberlabs-admin and vm-service",
+          "rationale": "Ensured compute-heavy VM provisioning scripts cannot degrade response latency for mission-critical administrative control panels.",
+          "tradeoff": "Introduced inter-service RPC communication overhead, mitigated by keep-alive HTTP agents on private VPC networks."
+        },
+        {
+          "decision": "Custom Decorator & ExecutionContext Guard in NestJS",
+          "rationale": "Enforced compile-time role assignment (@Roles('SYSADMIN', 'OPERATOR')) with runtime validation against JWT claims before hitting business controllers.",
+          "tradeoff": "Required strict JWT payload versioning to avoid stale permissions after user tier demotions."
+        },
+        {
+          "decision": "Index Strategy & Read Preferences on MongoDB Atlas",
+          "rationale": "Used secondary-preferred read preferences for read-heavy system telemetry queries while confining writes to the primary replica.",
+          "tradeoff": "Accepting brief eventual consistency (typically <100ms) on non-critical dashboard telemetry."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "roles.guard.ts (NestJS Custom RBAC Guard)",
+        "language": "typescript",
+        "description": "Production NestJS execution context guard validating role bitmasks and JWT identity.",
+        "code": "import { Injectable, CanActivate, ExecutionContext, ForbiddenException } from '@nestjs/common';\nimport { Reflector } from '@nestjs/core';\nimport { ROLES_KEY } from './roles.decorator';\nimport { Role } from './role.enum';\n\n@Injectable()\nexport class RolesGuard implements CanActivate {\n  constructor(private readonly reflector: Reflector) {}\n\n  canActivate(context: ExecutionContext): boolean {\n    const requiredRoles = this.reflector.getAllAndOverride<Role[]>(ROLES_KEY, [\n      context.getHandler(),\n      context.getClass(),\n    ]);\n\n    // If route has no @Roles declaration, permit access (authenticated by JwtAuthGuard)\n    if (!requiredRoles || requiredRoles.length === 0) {\n      return true;\n    }\n\n    const { user } = context.switchToHttp().getRequest();\n\n    if (!user || !user.roles) {\n      throw new ForbiddenException('Access denied: Missing role credentials');\n    }\n\n    const hasPermission = requiredRoles.some((role) => user.roles.includes(role));\n\n    if (!hasPermission) {\n      throw new ForbiddenException(\n        `Insufficient privileges: Requires [${requiredRoles.join(', ')}]`\n      );\n    }\n\n    return true;\n  }\n}"
+      },
+      "screens": [
+        {
+          "id": "admin-console",
+          "title": "CyberLabs Admin Control Plane",
+          "tag": "RBAC Dashboard",
+          "description": "Zero-Trust administrative console managing VPC droplets, service health, and operator privileges.",
+          "imagePath": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
+          "simulatedUrl": "https://console.cyberlabs.internal/admin"
+        },
+        {
+          "id": "vm-telemetry",
+          "title": "VM-Service Compute Orchestrator",
+          "tag": "Compute RPC",
+          "description": "Direct node provisioning telemetry, memory thresholds, and DigitalOcean private droplet states.",
+          "imagePath": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+          "simulatedUrl": "https://console.cyberlabs.internal/vms"
+        },
+        {
+          "id": "db-cluster",
+          "title": "MongoDB Atlas Cluster Metrics",
+          "tag": "Database Tier",
+          "description": "Multi-region sharded replica telemetry, connection pool saturation, and query latency monitoring.",
+          "imagePath": "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80",
+          "simulatedUrl": "https://console.cyberlabs.internal/metrics/db"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "eduko",
+      "title": "Eduko Learning Platform",
+      "subtitle": "Next.js App Router Architecture & Automated Delivery",
+      "tagline": "Frontend engineering migration to Next.js App Router with Server Actions, tag-based cache revalidation, and automated CI/CD via GitHub Actions and Vercel.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "Next.js App Router & Server Actions",
+        "Tag-Based Cache Revalidation",
+        "Vercel Edge Deployment",
+        "GitHub Actions CI/CD Pipeline"
+      ],
+      "liveUrl": "https://simple-fresh-cart-ecommerce.vercel.app/",
+      "githubUrl": "https://github.com/ahmedhabiby/Eduko1",
+      "coverImage": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1600&q=80",
+      "highlightRepos": [
+        {
+          "name": "ahmedhabiby/Eduko1",
+          "repoUrl": "https://github.com/ahmedhabiby/Eduko1",
+          "description": "Core Next.js platform repository delivering the modern educational interface.",
+          "tech": [
+            "Next.js 16",
+            "React 19",
+            "Tailwind CSS",
+            "Vercel"
+          ]
+        }
+      ],
+      "overview": "Eduko is an educational platform serving dynamic course material, interactive assessments, and high-concurrency learner traffic. Ahmed co-developed the frontend layer, transitioning complex UI state into Next.js App Router paradigms with React 19.",
+      "problem": "Legacy client-side data fetching caused sluggish initial page loads, layout shifts during course catalog rendering, and cumbersome manual deployments that delayed feature releases.",
+      "architectureDetails": {
+        "frontend": "Next.js 15/16 App Router, React 19 Server Components, Tailwind CSS, Framer Motion.",
+        "backend": "Node.js REST API with Redis caching layer.",
+        "infrastructure": "Vercel Global Edge Network with automated staging branch previews.",
+        "data": "PostgreSQL database accessed via optimized API endpoints and cached at edge."
+      },
+      "architectureFlow": [
+        {
+          "from": "Learner Client",
+          "to": "Vercel Global Edge",
+          "protocol": "HTTP/3",
+          "label": "Edge Cached Static Pages"
+        },
+        {
+          "from": "Vercel Edge",
+          "to": "Next.js Server Component",
+          "protocol": "RSC Stream",
+          "label": "Server-Rendered Shell"
+        },
+        {
+          "from": "Next.js Server Action",
+          "to": "API Backend",
+          "protocol": "HTTPS / REST",
+          "label": "Mutation & Token Verify"
+        },
+        {
+          "from": "Next.js Revalidation",
+          "to": "Vercel Cache",
+          "protocol": "revalidateTag()",
+          "label": "Instant On-Demand Invalidation"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Migration to React Server Components (RSC)",
+          "rationale": "Rendered course catalog and syllabus content on the server, eliminating client waterfall fetch requests and reducing JavaScript bundle size by over 40%.",
+          "tradeoff": "Required strict isolation between interactive client components ('use client') and server data-fetching modules."
+        },
+        {
+          "decision": "Tag-Based On-Demand Revalidation",
+          "rationale": "Used Next.js revalidateTag('course-[id]') inside Server Actions upon course updates, keeping content static at the edge until an instructor edits it.",
+          "tradeoff": "Requires deliberate tag naming conventions across all mutations to prevent cache leaks."
+        },
+        {
+          "decision": "Automated Pull Request Previews via GitHub Actions",
+          "rationale": "Every pull request triggered automated linting, type checks, and a live preview URL on Vercel, preventing regressions before merging into main.",
+          "tradeoff": "Added roughly 90 seconds to PR checks, heavily offset by catching syntax and styling defects early."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "course-actions.ts (Next.js Server Action with Cache Invalidation)",
+        "language": "typescript",
+        "description": "Type-safe Next.js Server Action with Zod input validation and on-demand cache revalidation.",
+        "code": "'use server';\n\nimport { revalidateTag } from 'next/cache';\nimport { z } from 'zod';\n\nconst UpdateCourseSchema = z.object({\n  courseId: z.string().min(1),\n  title: z.string().min(3).max(120),\n  syllabusJson: z.string(),\n  isPublished: z.boolean(),\n});\n\nexport type ActionState = {\n  success: boolean;\n  message?: string;\n  errors?: Record<string, string[]>;\n};\n\nexport async function updateCourseAction(\n  prevState: ActionState,\n  formData: FormData\n): Promise<ActionState> {\n  const validated = UpdateCourseSchema.safeParse({\n    courseId: formData.get('courseId'),\n    title: formData.get('title'),\n    syllabusJson: formData.get('syllabusJson'),\n    isPublished: formData.get('isPublished') === 'true',\n  });\n\n  if (!validated.success) {\n    return {\n      success: false,\n      errors: validated.error.flatten().fieldErrors,\n    };\n  }\n\n  const { courseId, title, syllabusJson, isPublished } = validated.data;\n\n  const res = await fetch(`${process.env.API_GATEWAY_URL}/courses/${courseId}`, {\n    method: 'PATCH',\n    headers: {\n      'Content-Type': 'application/json',\n      'X-Internal-Secret': process.env.INTERNAL_SERVICE_SECRET || '',\n    },\n    body: JSON.stringify({ title, syllabusJson, isPublished }),\n  });\n\n  if (!res.ok) {\n    return { success: false, message: 'Failed to update remote course record' };\n  }\n\n  // Atomically purge edge cache for this course and the catalog list\n  revalidateTag(`course-${courseId}`, 'default');\n  revalidateTag('catalog-list', 'default');\n\n  return { success: true, message: 'Course updated and edge cache purged.' };\n}"
+      },
+      "screens": [
+        {
+          "id": "course-catalog",
+          "title": "Course Catalog & Edge Shell",
+          "tag": "Next.js App Router",
+          "description": "Server-rendered lesson directory with zero cumulative layout shift and atomic cache tagging.",
+          "imagePath": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+          "simulatedUrl": "https://eduko.app/catalog"
+        },
+        {
+          "id": "assessment-engine",
+          "title": "Interactive Assessment Engine",
+          "tag": "React 19 State",
+          "description": "Real-time state validation, optimistic quiz submission, and automated score compiling.",
+          "imagePath": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+          "simulatedUrl": "https://eduko.app/assessments/module-4"
+        },
+        {
+          "id": "deployment-pipeline",
+          "title": "GitHub Actions Automated Pipeline",
+          "tag": "Vercel CD",
+          "description": "Automated linting, bundle size analysis, and zero-downtime edge previews on every PR.",
+          "imagePath": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=1200&q=80",
+          "simulatedUrl": "https://github.com/ahmedhabiby/Eduko1/actions"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "admin-dashboard",
+      "title": "Admin Dashboard",
+      "subtitle": "React • Tailwind CSS • Admin Dashboard",
+      "tagline": "Admin Dashboard is a responsive web application template built with React and Tailwind CSS. It provides a clean and modern design for managing administrative tasks and data visualization.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "React",
+        "Tailwind CSS",
+        "Admin Dashboard",
+        "Web Application"
+      ],
+      "liveUrl": "https://admin-dashboard-v1-phi.vercel.app/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Admin_Dashboard-v1",
+      "highlightRepos": [
+        {
+          "name": "Admin_Dashboard-v1",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Admin_Dashboard-v1",
+          "description": "Admin Dashboard is a responsive web application template built with React and Tailwind CSS. It provides a clean and modern design for managing administrative tasks and data visualization.",
+          "tech": [
+            "React",
+            "Tailwind CSS",
+            "Admin Dashboard",
+            "Web Application"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/AdminDashboardV1.jpeg",
+      "overview": "This project is an Admin Dashboard built with React and TailwindCSS, designed to provide a comprehensive interface for managing administrative tasks. It features a responsive layout, data visualization components, user management, analytics, and various widgets for quick access to important information. The dashboard is suitable for applications in various domains such as e-commerce, healthcare, and education, providing a user-friendly experience with modern UI/UX principles.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "React with React, Tailwind CSS, Chart.js, React Router",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "Vercel with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "use-dashboard-metrics.ts",
+        "language": "typescript",
+        "description": "Real-time reactive analytics aggregation hook with dynamic chart caching.",
+        "code": "import { useState, useEffect, useMemo } from \"react\";\n\nexport interface AnalyticsMetric {\n  timestamp: string;\n  revenue: number;\n  activeUsers: number;\n  conversionRate: number;\n}\n\nexport function useDashboardMetrics(intervalMs: number = 5000) {\n  const [dataPoints, setDataPoints] = useState<AnalyticsMetric[]>([]);\n  const [isLoading, setIsLoading] = useState<boolean>(true);\n\n  useEffect(() => {\n    let mounted = true;\n    const fetchMetrics = async () => {\n      try {\n        const res = await fetch(\"/api/analytics/realtime\");\n        if (!res.ok) throw new Error(\"Telemetry fetch failed\");\n        const payload = await res.json();\n        if (mounted) {\n          setDataPoints((prev) => [...prev.slice(-19), payload]);\n          setIsLoading(false);\n        }\n      } catch (err) {\n        console.error(\"Telemetry streaming error:\", err);\n      }\n    };\n\n    fetchMetrics();\n    const interval = setInterval(fetchMetrics, intervalMs);\n    return () => {\n      mounted = false;\n      clearInterval(interval);\n    };\n  }, [intervalMs]);\n\n  const summary = useMemo(() => {\n    if (dataPoints.length === 0) return { avgRevenue: 0, peakUsers: 0 };\n    const avgRevenue = dataPoints.reduce((acc, p) => acc + p.revenue, 0) / dataPoints.length;\n    const peakUsers = Math.max(...dataPoints.map((p) => p.activeUsers));\n    return { avgRevenue: Math.round(avgRevenue), peakUsers };\n  }, [dataPoints]);\n\n  return { dataPoints, summary, isLoading };\n}"
+      },
+      "screens": [
+        {
+          "id": "admin-dashboard-screen-0",
+          "title": "Admin Dashboard — Interface View #1",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P10.jpeg",
+          "simulatedUrl": "https://admin-dashboard-v1-phi.vercel.app/"
+        },
+        {
+          "id": "admin-dashboard-screen-1",
+          "title": "Admin Dashboard — Interface View #2",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P11.jpeg",
+          "simulatedUrl": "https://admin-dashboard-v1-phi.vercel.app/"
+        },
+        {
+          "id": "admin-dashboard-screen-2",
+          "title": "Admin Dashboard — Interface View #3",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P12.jpeg",
+          "simulatedUrl": "https://admin-dashboard-v1-phi.vercel.app/"
+        },
+        {
+          "id": "admin-dashboard-screen-3",
+          "title": "Admin Dashboard — Interface View #4",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P13.jpeg",
+          "simulatedUrl": "https://admin-dashboard-v1-phi.vercel.app/"
+        },
+        {
+          "id": "admin-dashboard-screen-4",
+          "title": "Admin Dashboard — Interface View #5",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P14.jpeg",
+          "simulatedUrl": "https://admin-dashboard-v1-phi.vercel.app/"
+        },
+        {
+          "id": "admin-dashboard-screen-5",
+          "title": "Admin Dashboard — Interface View #6",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P15.jpeg",
+          "simulatedUrl": "https://admin-dashboard-v1-phi.vercel.app/"
+        },
+        {
+          "id": "admin-dashboard-screen-6",
+          "title": "Admin Dashboard — Interface View #7",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P16.jpeg",
+          "simulatedUrl": "https://admin-dashboard-v1-phi.vercel.app/"
+        },
+        {
+          "id": "admin-dashboard-screen-7",
+          "title": "Admin Dashboard — Interface View #8",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P17.jpeg",
+          "simulatedUrl": "https://admin-dashboard-v1-phi.vercel.app/"
+        },
+        {
+          "id": "admin-dashboard-screen-8",
+          "title": "Admin Dashboard — Interface View #9",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P18.jpeg",
+          "simulatedUrl": "https://admin-dashboard-v1-phi.vercel.app/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "fresh-cart",
+      "title": "Fresh Cart E-commerce",
+      "subtitle": "React • Tailwind CSS • E-commerce",
+      "tagline": "Fresh Cart is a modern and responsive e-commerce website template built with React and Tailwind CSS. It features a clean and elegant design for showcasing various products and shopping-related content.",
+      "category": "Full-Stack Platforms",
+      "architectureLayers": [
+        "React",
+        "Tailwind CSS",
+        "E-commerce",
+        "Web Template"
+      ],
+      "liveUrl": "https://simple-fresh-cart-ecommerce.vercel.app/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Simple-Fresh-Cart-Ecommerce",
+      "highlightRepos": [
+        {
+          "name": "Simple-Fresh-Cart-Ecommerce",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Simple-Fresh-Cart-Ecommerce",
+          "description": "Fresh Cart is a modern and responsive e-commerce website template built with React and Tailwind CSS. It features a clean and elegant design for showcasing various products and shopping-related content.",
+          "tech": [
+            "React",
+            "Tailwind CSS",
+            "E-commerce",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/FreshCartEcommerce.jpeg",
+      "overview": "Fresh Cart is a comprehensive e-commerce solution built with React and TailwindCSS. The project features product catalogs, shopping cart functionality, user authentication, payment integration, and responsive design. It's designed to provide a seamless shopping experience with modern UI/UX patterns and optimized performance for both desktop and mobile devices.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "React with React, Tailwind CSS, React Router, Axios",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "Vercel with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "cart-state-machine.ts",
+        "language": "typescript",
+        "description": "Atomic cart state reducer with quantity debounce and persistent checkout session validation.",
+        "code": "export interface CartItem {\n  id: string;\n  title: string;\n  price: number;\n  quantity: number;\n  stock: number;\n}\n\nexport interface CartState {\n  items: Map<string, CartItem>;\n  totalAmount: number;\n  totalQuantity: number;\n  isSyncing: boolean;\n}\n\nexport type CartAction =\n  | { type: \"ADD_ITEM\"; payload: CartItem }\n  | { type: \"UPDATE_QTY\"; payload: { id: string; quantity: number } }\n  | { type: \"REMOVE_ITEM\"; payload: { id: string } }\n  | { type: \"CLEAR_CART\" };\n\nexport function cartReducer(state: CartState, action: CartAction): CartState {\n  const nextItems = new Map(state.items);\n\n  switch (action.type) {\n    case \"ADD_ITEM\": {\n      const existing = nextItems.get(action.payload.id);\n      if (existing) {\n        const newQty = Math.min(existing.quantity + 1, action.payload.stock);\n        nextItems.set(action.payload.id, { ...existing, quantity: newQty });\n      } else {\n        nextItems.set(action.payload.id, { ...action.payload, quantity: 1 });\n      }\n      break;\n    }\n    case \"UPDATE_QTY\": {\n      const target = nextItems.get(action.payload.id);\n      if (target && action.payload.quantity > 0) {\n        nextItems.set(action.payload.id, { ...target, quantity: action.payload.quantity });\n      } else {\n        nextItems.delete(action.payload.id);\n      }\n      break;\n    }\n    case \"REMOVE_ITEM\":\n      nextItems.delete(action.payload.id);\n      break;\n    case \"CLEAR_CART\":\n      nextItems.clear();\n      break;\n  }\n\n  let totalAmount = 0;\n  let totalQuantity = 0;\n  for (const item of nextItems.values()) {\n    totalAmount += item.price * item.quantity;\n    totalQuantity += item.quantity;\n  }\n\n  return { items: nextItems, totalAmount: Number(totalAmount.toFixed(2)), totalQuantity, isSyncing: false };\n}"
+      },
+      "screens": [
+        {
+          "id": "fresh-cart-screen-0",
+          "title": "Fresh Cart E-commerce — Interface View #1",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P20.jpeg",
+          "simulatedUrl": "https://simple-fresh-cart-ecommerce.vercel.app/"
+        },
+        {
+          "id": "fresh-cart-screen-1",
+          "title": "Fresh Cart E-commerce — Interface View #2",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P21.jpeg",
+          "simulatedUrl": "https://simple-fresh-cart-ecommerce.vercel.app/"
+        },
+        {
+          "id": "fresh-cart-screen-2",
+          "title": "Fresh Cart E-commerce — Interface View #3",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P22.jpeg",
+          "simulatedUrl": "https://simple-fresh-cart-ecommerce.vercel.app/"
+        },
+        {
+          "id": "fresh-cart-screen-3",
+          "title": "Fresh Cart E-commerce — Interface View #4",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P23.jpeg",
+          "simulatedUrl": "https://simple-fresh-cart-ecommerce.vercel.app/"
+        },
+        {
+          "id": "fresh-cart-screen-4",
+          "title": "Fresh Cart E-commerce — Interface View #5",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P24.jpeg",
+          "simulatedUrl": "https://simple-fresh-cart-ecommerce.vercel.app/"
+        },
+        {
+          "id": "fresh-cart-screen-5",
+          "title": "Fresh Cart E-commerce — Interface View #6",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P25.jpeg",
+          "simulatedUrl": "https://simple-fresh-cart-ecommerce.vercel.app/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "ethan-portfolio",
+      "title": "Ethan Portfolio Template",
+      "subtitle": "Next.js • Tailwind CSS • Portfolio",
+      "tagline": "Ethan Portfolio Template is a modern and responsive portfolio template built with Next.js, Tailwind CSS and farmer motion. It showcases a clean and elegant design for presenting personal projects and skills.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "Next.js",
+        "Tailwind CSS",
+        "Portfolio",
+        "Web Template"
+      ],
+      "liveUrl": "https://ethan-portfolio-template.vercel.app/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Ethan-Portfolio-Template-using-NextJs",
+      "highlightRepos": [
+        {
+          "name": "Ethan-Portfolio-Template-using-NextJs",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Ethan-Portfolio-Template-using-NextJs",
+          "description": "Ethan Portfolio Template is a modern and responsive portfolio template built with Next.js, Tailwind CSS and farmer motion. It showcases a clean and elegant design for presenting personal projects and skills.",
+          "tech": [
+            "Next.js",
+            "Tailwind CSS",
+            "Portfolio",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/EthanPortfolioTemplate.jpeg",
+      "overview": "Ethan Portfolio Template is a sophisticated portfolio website built with Next.js and enhanced with Framer Motion animations. The template features smooth transitions, interactive elements, project showcases, skills sections, and contact forms. It's optimized for SEO and performance with Next.js features like SSR and image optimization.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Next.js with Next.js, Tailwind CSS, Framer Motion, React",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "Vercel with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "ethan-portfolio-screen-0",
+          "title": "Ethan Portfolio Template — Interface View #1",
+          "tag": "Next.js",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P30.jpeg",
+          "simulatedUrl": "https://ethan-portfolio-template.vercel.app/"
+        },
+        {
+          "id": "ethan-portfolio-screen-1",
+          "title": "Ethan Portfolio Template — Interface View #2",
+          "tag": "Next.js",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P31.jpeg",
+          "simulatedUrl": "https://ethan-portfolio-template.vercel.app/"
+        },
+        {
+          "id": "ethan-portfolio-screen-2",
+          "title": "Ethan Portfolio Template — Interface View #3",
+          "tag": "Next.js",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P32.jpeg",
+          "simulatedUrl": "https://ethan-portfolio-template.vercel.app/"
+        },
+        {
+          "id": "ethan-portfolio-screen-3",
+          "title": "Ethan Portfolio Template — Interface View #4",
+          "tag": "Next.js",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P33.jpeg",
+          "simulatedUrl": "https://ethan-portfolio-template.vercel.app/"
+        },
+        {
+          "id": "ethan-portfolio-screen-4",
+          "title": "Ethan Portfolio Template — Interface View #5",
+          "tag": "Next.js",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P34.jpeg",
+          "simulatedUrl": "https://ethan-portfolio-template.vercel.app/"
+        },
+        {
+          "id": "ethan-portfolio-screen-5",
+          "title": "Ethan Portfolio Template — Interface View #6",
+          "tag": "Next.js",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P35.jpeg",
+          "simulatedUrl": "https://ethan-portfolio-template.vercel.app/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "vs-code-clone",
+      "title": "VS Code Clone",
+      "subtitle": "React • TypeScript • Vite",
+      "tagline": "A web-based code editor that mimics the look and feel of Visual Studio Code. It is built using React + TypeScript + Vite and Tailwind CSS, providing a modern and responsive design for coding tasks.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "Code Editor"
+      ],
+      "liveUrl": "https://vs-code-clone-three.vercel.app/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Vs_code_clone",
+      "highlightRepos": [
+        {
+          "name": "Vs_code_clone",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Vs_code_clone",
+          "description": "A web-based code editor that mimics the look and feel of Visual Studio Code. It is built using React + TypeScript + Vite and Tailwind CSS, providing a modern and responsive design for coding tasks.",
+          "tech": [
+            "React",
+            "TypeScript",
+            "Vite",
+            "Tailwind CSS",
+            "Code Editor"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/VsCodeClone.jpeg",
+      "overview": "This VS Code Clone replicates the core functionality and appearance of Visual Studio Code in a web browser. Built with React, TypeScript, and Vite, it features syntax highlighting, file management, multiple tabs, theme switching, and a responsive layout. The project demonstrates advanced React patterns and TypeScript integration for building complex web applications.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "React with React, TypeScript, Vite, Tailwind CSS, Monaco Editor",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "Vercel with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "editor-workspace.tsx",
+        "language": "typescript",
+        "description": "Monaco Editor state synchronization and dynamic syntax highlighting service.",
+        "code": "import * as React from \"react\";\nimport Editor, { useMonaco } from \"@monaco-editor/react\";\n\ninterface CodeWorkspaceProps {\n  initialFile: string;\n  activeLanguage: string;\n  theme: \"vs-dark\" | \"light\";\n  onCodeChange: (content: string) => void;\n}\n\nexport function CodeWorkspace({ initialFile, activeLanguage, theme, onCodeChange }: CodeWorkspaceProps) {\n  const monaco = useMonaco();\n\n  React.useEffect(() => {\n    if (!monaco) return;\n    monaco.editor.setTheme(theme === \"vs-dark\" ? \"vs-dark\" : \"vs\");\n    monaco.languages.typescript.typescriptDefaults.setDiagnosticsOptions({\n      noSemanticValidation: false,\n      noSyntaxValidation: false,\n    });\n  }, [monaco, theme]);\n\n  return (\n    <div className=\"h-full w-full overflow-hidden rounded-xl border border-zinc-800 bg-[#1e1e1e]\">\n      <Editor\n        height=\"100%\"\n        language={activeLanguage}\n        defaultValue={initialFile}\n        theme={theme}\n        options={{\n          minimap: { enabled: true, side: \"right\" },\n          fontSize: 13,\n          lineNumbers: \"on\",\n          scrollBeyondLastLine: false,\n          fontFamily: \"'JetBrains Mono', 'Fira Code', monospace\",\n          fontLigatures: true,\n          cursorBlinking: \"smooth\",\n          smoothScrolling: true,\n        }}\n        onChange={(value) => onCodeChange(value || \"\")}\n      />\n    </div>\n  );\n}"
+      },
+      "screens": [
+        {
+          "id": "vs-code-clone-screen-0",
+          "title": "VS Code Clone — Interface View #1",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P40.jpeg",
+          "simulatedUrl": "https://vs-code-clone-three.vercel.app/"
+        },
+        {
+          "id": "vs-code-clone-screen-1",
+          "title": "VS Code Clone — Interface View #2",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P41.jpeg",
+          "simulatedUrl": "https://vs-code-clone-three.vercel.app/"
+        },
+        {
+          "id": "vs-code-clone-screen-2",
+          "title": "VS Code Clone — Interface View #3",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P42.jpeg",
+          "simulatedUrl": "https://vs-code-clone-three.vercel.app/"
+        },
+        {
+          "id": "vs-code-clone-screen-3",
+          "title": "VS Code Clone — Interface View #4",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P43.jpeg",
+          "simulatedUrl": "https://vs-code-clone-three.vercel.app/"
+        },
+        {
+          "id": "vs-code-clone-screen-4",
+          "title": "VS Code Clone — Interface View #5",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P44.jpeg",
+          "simulatedUrl": "https://vs-code-clone-three.vercel.app/"
+        },
+        {
+          "id": "vs-code-clone-screen-5",
+          "title": "VS Code Clone — Interface View #6",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P45.jpeg",
+          "simulatedUrl": "https://vs-code-clone-three.vercel.app/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "frontend-mentor",
+      "title": "Frontend Mentor Projects",
+      "subtitle": "React • Frontend Mentor • Web Projects",
+      "tagline": "A collection of frontend projects built using React, showcasing various design patterns and UI components. Each project is designed to be responsive and user-friendly. with 3 Mode Dark, Light and Blue mode.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "React",
+        "Frontend Mentor",
+        "Web Projects"
+      ],
+      "liveUrl": "https://frontend-mentor-projects-azure.vercel.app/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/frontend__mentor--projects",
+      "highlightRepos": [
+        {
+          "name": "frontend__mentor--projects",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/frontend__mentor--projects",
+          "description": "A collection of frontend projects built using React, showcasing various design patterns and UI components. Each project is designed to be responsive and user-friendly. with 3 Mode Dark, Light and Blue mode.",
+          "tech": [
+            "React",
+            "Frontend Mentor",
+            "Web Projects"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/FrontendMentorProjects.jpeg",
+      "overview": "This collection showcases multiple Frontend Mentor challenges solved using React. Each project demonstrates different aspects of frontend development including responsive design, state management, API integration, and modern CSS techniques. The collection features dark, light, and blue themes, providing users with customizable viewing experiences.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "React with React, CSS Modules, React Router, Context API",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "Vercel with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "frontend-mentor-screen-0",
+          "title": "Frontend Mentor Projects — Interface View #1",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P50.jpeg",
+          "simulatedUrl": "https://frontend-mentor-projects-azure.vercel.app/"
+        },
+        {
+          "id": "frontend-mentor-screen-1",
+          "title": "Frontend Mentor Projects — Interface View #2",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P51.jpeg",
+          "simulatedUrl": "https://frontend-mentor-projects-azure.vercel.app/"
+        },
+        {
+          "id": "frontend-mentor-screen-2",
+          "title": "Frontend Mentor Projects — Interface View #3",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P52.jpeg",
+          "simulatedUrl": "https://frontend-mentor-projects-azure.vercel.app/"
+        },
+        {
+          "id": "frontend-mentor-screen-3",
+          "title": "Frontend Mentor Projects — Interface View #4",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P53.jpeg",
+          "simulatedUrl": "https://frontend-mentor-projects-azure.vercel.app/"
+        },
+        {
+          "id": "frontend-mentor-screen-4",
+          "title": "Frontend Mentor Projects — Interface View #5",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P54.jpeg",
+          "simulatedUrl": "https://frontend-mentor-projects-azure.vercel.app/"
+        },
+        {
+          "id": "frontend-mentor-screen-5",
+          "title": "Frontend Mentor Projects — Interface View #6",
+          "tag": "React",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P55.jpeg",
+          "simulatedUrl": "https://frontend-mentor-projects-azure.vercel.app/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "jack-portfolio",
+      "title": "Jack Portfolio Template",
+      "subtitle": "HTML • CSS • JavaScript",
+      "tagline": "Jack Portfolio Template is a modern and responsive portfolio template built with HTML, CSS and Custom Js. It showcases a clean and elegant design for presenting personal projects and skills.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Portfolio",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/Jack-portfolio-Website-Template/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Jack-portfolio-Website-Template",
+      "highlightRepos": [
+        {
+          "name": "Jack-portfolio-Website-Template",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Jack-portfolio-Website-Template",
+          "description": "Jack Portfolio Template is a modern and responsive portfolio template built with HTML, CSS and Custom Js. It showcases a clean and elegant design for presenting personal projects and skills.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Portfolio",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/JackPortfolioTemplate.jpeg",
+      "overview": "Jack Portfolio Template is a clean and professional portfolio website built with vanilla HTML, CSS, and JavaScript. It features smooth scrolling, animated sections, project galleries, skills showcases, and contact forms. The template is fully responsive and includes modern design elements with CSS animations and JavaScript interactions.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Vanilla JS with HTML5, CSS3, JavaScript, Font Awesome",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "jack-portfolio-screen-0",
+          "title": "Jack Portfolio Template — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P60.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Jack-portfolio-Website-Template/"
+        },
+        {
+          "id": "jack-portfolio-screen-1",
+          "title": "Jack Portfolio Template — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P61.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Jack-portfolio-Website-Template/"
+        },
+        {
+          "id": "jack-portfolio-screen-2",
+          "title": "Jack Portfolio Template — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P62.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Jack-portfolio-Website-Template/"
+        },
+        {
+          "id": "jack-portfolio-screen-3",
+          "title": "Jack Portfolio Template — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P63.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Jack-portfolio-Website-Template/"
+        },
+        {
+          "id": "jack-portfolio-screen-4",
+          "title": "Jack Portfolio Template — Interface View #5",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P64.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Jack-portfolio-Website-Template/"
+        },
+        {
+          "id": "jack-portfolio-screen-5",
+          "title": "Jack Portfolio Template — Interface View #6",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P65.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Jack-portfolio-Website-Template/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "dine-out",
+      "title": "Dine Out Restaurant",
+      "subtitle": "HTML • CSS • JavaScript",
+      "tagline": "Dine Out Restaurant is a modern and responsive restaurant website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing restaurant menus, services, and contact information.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Restaurant",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/DineOut-Restaurant/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/DineOut-Restaurant",
+      "highlightRepos": [
+        {
+          "name": "DineOut-Restaurant",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/DineOut-Restaurant",
+          "description": "Dine Out Restaurant is a modern and responsive restaurant website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing restaurant menus, services, and contact information.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Restaurant",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/DineOutRestaurant.jpeg",
+      "overview": "Dine Out Restaurant is a comprehensive restaurant website featuring menu displays, reservation systems, gallery showcases, and contact information. Built with HTML, CSS, and JavaScript, it includes interactive elements like image carousels, smooth scrolling navigation, and responsive design optimized for all devices.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Vanilla JS with HTML5, CSS3, JavaScript, Swiper.js",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "dine-out-screen-0",
+          "title": "Dine Out Restaurant — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P70.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DineOut-Restaurant/"
+        },
+        {
+          "id": "dine-out-screen-1",
+          "title": "Dine Out Restaurant — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P71.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DineOut-Restaurant/"
+        },
+        {
+          "id": "dine-out-screen-2",
+          "title": "Dine Out Restaurant — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P72.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DineOut-Restaurant/"
+        },
+        {
+          "id": "dine-out-screen-3",
+          "title": "Dine Out Restaurant — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P73.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DineOut-Restaurant/"
+        },
+        {
+          "id": "dine-out-screen-4",
+          "title": "Dine Out Restaurant — Interface View #5",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P74.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DineOut-Restaurant/"
+        },
+        {
+          "id": "dine-out-screen-5",
+          "title": "Dine Out Restaurant — Interface View #6",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P75.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DineOut-Restaurant/"
+        },
+        {
+          "id": "dine-out-screen-6",
+          "title": "Dine Out Restaurant — Interface View #7",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P76.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DineOut-Restaurant/"
+        },
+        {
+          "id": "dine-out-screen-7",
+          "title": "Dine Out Restaurant — Interface View #8",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P77.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DineOut-Restaurant/"
+        },
+        {
+          "id": "dine-out-screen-8",
+          "title": "Dine Out Restaurant — Interface View #9",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P78.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DineOut-Restaurant/"
+        },
+        {
+          "id": "dine-out-screen-9",
+          "title": "Dine Out Restaurant — Interface View #10",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P79.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DineOut-Restaurant/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "online-education",
+      "title": "Online Education",
+      "subtitle": "HTML • CSS • JavaScript",
+      "tagline": "Online Education is a modern and responsive online education website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing online courses, instructors, and student testimonials.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Online Education",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/Online-Education/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Online-Education",
+      "highlightRepos": [
+        {
+          "name": "Online-Education",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Online-Education",
+          "description": "Online Education is a modern and responsive online education website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing online courses, instructors, and student testimonials.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Online Education",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/OnlineEducation.jpeg",
+      "overview": "Online Education platform is designed to showcase educational courses, instructor profiles, and student testimonials. The website features course catalogs, enrollment systems, progress tracking, and interactive learning modules. Built with responsive design principles to ensure accessibility across all devices.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Vanilla JS with HTML5, CSS3, JavaScript, AOS Animation",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "online-education-screen-0",
+          "title": "Online Education — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P80.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Online-Education/"
+        },
+        {
+          "id": "online-education-screen-1",
+          "title": "Online Education — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P81.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Online-Education/"
+        },
+        {
+          "id": "online-education-screen-2",
+          "title": "Online Education — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P82.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Online-Education/"
+        },
+        {
+          "id": "online-education-screen-3",
+          "title": "Online Education — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P83.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Online-Education/"
+        },
+        {
+          "id": "online-education-screen-4",
+          "title": "Online Education — Interface View #5",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P84.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Online-Education/"
+        },
+        {
+          "id": "online-education-screen-5",
+          "title": "Online Education — Interface View #6",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P85.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Online-Education/"
+        },
+        {
+          "id": "online-education-screen-6",
+          "title": "Online Education — Interface View #7",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P86.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Online-Education/"
+        },
+        {
+          "id": "online-education-screen-7",
+          "title": "Online Education — Interface View #8",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P87.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Online-Education/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "agency-landing",
+      "title": "Agency Landing Page",
+      "subtitle": "HTML • CSS • Bootstrap",
+      "tagline": "Agency Landing Page is a modern and responsive landing page template built with Bootstrap. It features a clean and elegant design for showcasing agency services, portfolios, and contact information.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Landing Page",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/Agency-Landing-Page/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Agency-Landing-Page",
+      "highlightRepos": [
+        {
+          "name": "Agency-Landing-Page",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Agency-Landing-Page",
+          "description": "Agency Landing Page is a modern and responsive landing page template built with Bootstrap. It features a clean and elegant design for showcasing agency services, portfolios, and contact information.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "Landing Page",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/AgencyLandingPage.jpeg",
+      "overview": "Agency Landing Page is a professional business website template built with Bootstrap framework. It showcases agency services, team members, portfolio projects, and client testimonials. The design features modern layouts, interactive elements, and optimized performance for lead generation and business growth.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Bootstrap with HTML5, CSS3, Bootstrap, jQuery",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "agency-landing-screen-0",
+          "title": "Agency Landing Page — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P90.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Agency-Landing-Page/"
+        },
+        {
+          "id": "agency-landing-screen-1",
+          "title": "Agency Landing Page — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P91.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Agency-Landing-Page/"
+        },
+        {
+          "id": "agency-landing-screen-2",
+          "title": "Agency Landing Page — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P92.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Agency-Landing-Page/"
+        },
+        {
+          "id": "agency-landing-screen-3",
+          "title": "Agency Landing Page — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P93.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Agency-Landing-Page/"
+        },
+        {
+          "id": "agency-landing-screen-4",
+          "title": "Agency Landing Page — Interface View #5",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P94.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Agency-Landing-Page/"
+        },
+        {
+          "id": "agency-landing-screen-5",
+          "title": "Agency Landing Page — Interface View #6",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P95.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Agency-Landing-Page/"
+        },
+        {
+          "id": "agency-landing-screen-6",
+          "title": "Agency Landing Page — Interface View #7",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P96.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Agency-Landing-Page/"
+        },
+        {
+          "id": "agency-landing-screen-7",
+          "title": "Agency Landing Page — Interface View #8",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P97.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Agency-Landing-Page/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "arsha-template",
+      "title": "Arsha Bootstrap Template",
+      "subtitle": "HTML • CSS • Bootstrap",
+      "tagline": "Arsha Bootstrap Template is a modern and responsive website template built with Bootstrap. It features a clean and elegant design for showcasing various services, portfolios, and contact information.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Landing Page",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/ITI-_Angular_Bootstrap_Task/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/ITI-_Angular_Bootstrap_Task",
+      "highlightRepos": [
+        {
+          "name": "ITI-_Angular_Bootstrap_Task",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/ITI-_Angular_Bootstrap_Task",
+          "description": "Arsha Bootstrap Template is a modern and responsive website template built with Bootstrap. It features a clean and elegant design for showcasing various services, portfolios, and contact information.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "Landing Page",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/ArshaBootstrapTemplate.jpeg",
+      "overview": "Arsha Bootstrap Template is a versatile business website template featuring multiple sections for services, portfolio, team, and testimonials. Built with Bootstrap framework, it includes responsive navigation, smooth scrolling, and modern UI components suitable for various business types and professional services.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Bootstrap with HTML5, CSS3, Bootstrap, jQuery, AOS",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "arsha-template-screen-0",
+          "title": "Arsha Bootstrap Template — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P100.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/ITI-_Angular_Bootstrap_Task/"
+        },
+        {
+          "id": "arsha-template-screen-1",
+          "title": "Arsha Bootstrap Template — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P101.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/ITI-_Angular_Bootstrap_Task/"
+        },
+        {
+          "id": "arsha-template-screen-2",
+          "title": "Arsha Bootstrap Template — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P102.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/ITI-_Angular_Bootstrap_Task/"
+        },
+        {
+          "id": "arsha-template-screen-3",
+          "title": "Arsha Bootstrap Template — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P103.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/ITI-_Angular_Bootstrap_Task/"
+        },
+        {
+          "id": "arsha-template-screen-4",
+          "title": "Arsha Bootstrap Template — Interface View #5",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P104.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/ITI-_Angular_Bootstrap_Task/"
+        },
+        {
+          "id": "arsha-template-screen-5",
+          "title": "Arsha Bootstrap Template — Interface View #6",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P105.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/ITI-_Angular_Bootstrap_Task/"
+        },
+        {
+          "id": "arsha-template-screen-6",
+          "title": "Arsha Bootstrap Template — Interface View #7",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P106.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/ITI-_Angular_Bootstrap_Task/"
+        },
+        {
+          "id": "arsha-template-screen-7",
+          "title": "Arsha Bootstrap Template — Interface View #8",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P107.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/ITI-_Angular_Bootstrap_Task/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "bootstrap-bonndi",
+      "title": "Bootstrap Bonndi Template",
+      "subtitle": "HTML • CSS • Bootstrap",
+      "tagline": "Bootstrap Bonndi Template is a modern and responsive website template built with Bootstrap. It features a clean and elegant design for showcasing various services, portfolios, and contact information.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "Landing Page",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/Bootstrap-Bonndi-Template/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Bootstrap-Bonndi-Template",
+      "highlightRepos": [
+        {
+          "name": "Bootstrap-Bonndi-Template",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Bootstrap-Bonndi-Template",
+          "description": "Bootstrap Bonndi Template is a modern and responsive website template built with Bootstrap. It features a clean and elegant design for showcasing various services, portfolios, and contact information.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "Landing Page",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/BootstrapBonndiTemplate.jpeg",
+      "overview": "Bootstrap Bonndi Template is a creative and modern website template designed for agencies and creative professionals. It features unique layouts, interactive elements, portfolio showcases, and service presentations. The template is built with Bootstrap for responsive design and includes custom CSS for distinctive styling.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Bootstrap with HTML5, CSS3, Bootstrap, jQuery, Owl Carousel",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "bootstrap-bonndi-screen-0",
+          "title": "Bootstrap Bonndi Template — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P110.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Bootstrap-Bonndi-Template/"
+        },
+        {
+          "id": "bootstrap-bonndi-screen-1",
+          "title": "Bootstrap Bonndi Template — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P111.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Bootstrap-Bonndi-Template/"
+        },
+        {
+          "id": "bootstrap-bonndi-screen-2",
+          "title": "Bootstrap Bonndi Template — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P112.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Bootstrap-Bonndi-Template/"
+        },
+        {
+          "id": "bootstrap-bonndi-screen-3",
+          "title": "Bootstrap Bonndi Template — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P113.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Bootstrap-Bonndi-Template/"
+        },
+        {
+          "id": "bootstrap-bonndi-screen-4",
+          "title": "Bootstrap Bonndi Template — Interface View #5",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P114.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Bootstrap-Bonndi-Template/"
+        },
+        {
+          "id": "bootstrap-bonndi-screen-5",
+          "title": "Bootstrap Bonndi Template — Interface View #6",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P111.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Bootstrap-Bonndi-Template/"
+        },
+        {
+          "id": "bootstrap-bonndi-screen-6",
+          "title": "Bootstrap Bonndi Template — Interface View #7",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P115.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Bootstrap-Bonndi-Template/"
+        },
+        {
+          "id": "bootstrap-bonndi-screen-7",
+          "title": "Bootstrap Bonndi Template — Interface View #8",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P116.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Bootstrap-Bonndi-Template/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "gigaland-nft",
+      "title": "Gigaland - NFT Marketplace",
+      "subtitle": "HTML • CSS • JavaScript",
+      "tagline": "Gigaland is a modern and responsive NFT marketplace template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing various NFTs, artists, and collections.",
+      "category": "Interactive & Web3",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "NFT Marketplace",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/Gigaland-Landing/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Gigaland-Landing",
+      "highlightRepos": [
+        {
+          "name": "Gigaland-Landing",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Gigaland-Landing",
+          "description": "Gigaland is a modern and responsive NFT marketplace template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing various NFTs, artists, and collections.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "NFT Marketplace",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/GigalandNFTMarketplace.jpeg",
+      "overview": "Gigaland NFT Marketplace is a cutting-edge platform design for digital art and NFT trading. The website features artist profiles, NFT collections, bidding systems, and marketplace functionality. Built with modern web technologies, it includes interactive galleries, search filters, and responsive design optimized for crypto and NFT enthusiasts.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Vanilla JS with HTML5, CSS3, JavaScript, Web3.js, GSAP",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "gigaland-nft-screen-0",
+          "title": "Gigaland - NFT Marketplace — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P120.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gigaland-Landing/"
+        },
+        {
+          "id": "gigaland-nft-screen-1",
+          "title": "Gigaland - NFT Marketplace — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P121.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gigaland-Landing/"
+        },
+        {
+          "id": "gigaland-nft-screen-2",
+          "title": "Gigaland - NFT Marketplace — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P122.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gigaland-Landing/"
+        },
+        {
+          "id": "gigaland-nft-screen-3",
+          "title": "Gigaland - NFT Marketplace — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P123.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gigaland-Landing/"
+        },
+        {
+          "id": "gigaland-nft-screen-4",
+          "title": "Gigaland - NFT Marketplace — Interface View #5",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P124.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gigaland-Landing/"
+        },
+        {
+          "id": "gigaland-nft-screen-5",
+          "title": "Gigaland - NFT Marketplace — Interface View #6",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P125.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gigaland-Landing/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "gaming-website",
+      "title": "Gaming Website",
+      "subtitle": "HTML • CSS • JavaScript",
+      "tagline": "Gaming Website is a modern and responsive gaming website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing various games, news, and gaming-related content.",
+      "category": "Interactive & Web3",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Gaming",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/Gaming_Website/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Gaming_Website",
+      "highlightRepos": [
+        {
+          "name": "Gaming_Website",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Gaming_Website",
+          "description": "Gaming Website is a modern and responsive gaming website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing various games, news, and gaming-related content.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Gaming",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/GamingWebsite.jpeg",
+      "overview": "Gaming Website is an immersive platform designed for gaming enthusiasts. It features game showcases, news sections, tournament information, and community features. The website includes interactive elements, animated transitions, and responsive design optimized for gaming content and user engagement.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Vanilla JS with HTML5, CSS3, JavaScript, Particles.js, AOS",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "gaming-website-screen-0",
+          "title": "Gaming Website — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P130.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gaming_Website/"
+        },
+        {
+          "id": "gaming-website-screen-1",
+          "title": "Gaming Website — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P131.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gaming_Website/"
+        },
+        {
+          "id": "gaming-website-screen-2",
+          "title": "Gaming Website — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P132.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gaming_Website/"
+        },
+        {
+          "id": "gaming-website-screen-3",
+          "title": "Gaming Website — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P133.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gaming_Website/"
+        },
+        {
+          "id": "gaming-website-screen-4",
+          "title": "Gaming Website — Interface View #5",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P134.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gaming_Website/"
+        },
+        {
+          "id": "gaming-website-screen-5",
+          "title": "Gaming Website — Interface View #6",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P135.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gaming_Website/"
+        },
+        {
+          "id": "gaming-website-screen-6",
+          "title": "Gaming Website — Interface View #7",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P136.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Gaming_Website/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "digit-art",
+      "title": "Digit Art",
+      "subtitle": "HTML • CSS • JavaScript",
+      "tagline": "Digit Art is a modern and responsive gaming website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing various games, news, and gaming-related content.",
+      "category": "Interactive & Web3",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Gaming",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/Digit-Art/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Digit-Art",
+      "highlightRepos": [
+        {
+          "name": "Digit-Art",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Digit-Art",
+          "description": "Digit Art is a modern and responsive gaming website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing various games, news, and gaming-related content.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Gaming",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/DigitArt.jpeg",
+      "overview": "Digit Art is a creative platform showcasing digital artwork and gaming content. The website features artist portfolios, digital galleries, interactive showcases, and modern design elements. Built with HTML, CSS, and JavaScript, it includes smooth animations and responsive layouts for optimal viewing of digital art content.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Vanilla JS with HTML5, CSS3, JavaScript, Three.js, GSAP",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "digit-art-screen-0",
+          "title": "Digit Art — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P140.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Digit-Art/"
+        },
+        {
+          "id": "digit-art-screen-1",
+          "title": "Digit Art — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P141.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Digit-Art/"
+        },
+        {
+          "id": "digit-art-screen-2",
+          "title": "Digit Art — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P142.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Digit-Art/"
+        },
+        {
+          "id": "digit-art-screen-3",
+          "title": "Digit Art — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P143.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Digit-Art/"
+        },
+        {
+          "id": "digit-art-screen-4",
+          "title": "Digit Art — Interface View #5",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P144.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Digit-Art/"
+        },
+        {
+          "id": "digit-art-screen-5",
+          "title": "Digit Art — Interface View #6",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P145.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Digit-Art/"
+        },
+        {
+          "id": "digit-art-screen-6",
+          "title": "Digit Art — Interface View #7",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P146.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Digit-Art/"
+        },
+        {
+          "id": "digit-art-screen-7",
+          "title": "Digit Art — Interface View #8",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P147.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Digit-Art/"
+        },
+        {
+          "id": "digit-art-screen-8",
+          "title": "Digit Art — Interface View #9",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P148.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Digit-Art/"
+        },
+        {
+          "id": "digit-art-screen-9",
+          "title": "Digit Art — Interface View #10",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P149.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Digit-Art/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "fruit-shop",
+      "title": "Fruit Shop",
+      "subtitle": "HTML • CSS • JavaScript",
+      "tagline": "Fruit Shop is a modern and responsive e-commerce website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing various fruits, products, and shopping-related content.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "E-commerce",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/Fruit-Shop/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Fruit-Shop",
+      "highlightRepos": [
+        {
+          "name": "Fruit-Shop",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Fruit-Shop",
+          "description": "Fruit Shop is a modern and responsive e-commerce website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing various fruits, products, and shopping-related content.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "E-commerce",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/FruitShop.jpeg",
+      "overview": "Fruit Shop is an e-commerce website template designed for fresh produce and organic food retailers. It features product catalogs, shopping cart functionality, customer reviews, and delivery information. The website includes responsive design, interactive product galleries, and modern UI elements optimized for food and retail businesses.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Vanilla JS with HTML5, CSS3, JavaScript, Swiper.js",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "fruit-shop-screen-0",
+          "title": "Fruit Shop — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P150.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Fruit-Shop/"
+        },
+        {
+          "id": "fruit-shop-screen-1",
+          "title": "Fruit Shop — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P151.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Fruit-Shop/"
+        },
+        {
+          "id": "fruit-shop-screen-2",
+          "title": "Fruit Shop — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P152.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Fruit-Shop/"
+        },
+        {
+          "id": "fruit-shop-screen-3",
+          "title": "Fruit Shop — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P153.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Fruit-Shop/"
+        },
+        {
+          "id": "fruit-shop-screen-4",
+          "title": "Fruit Shop — Interface View #5",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P154.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Fruit-Shop/"
+        },
+        {
+          "id": "fruit-shop-screen-5",
+          "title": "Fruit Shop — Interface View #6",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P155.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Fruit-Shop/"
+        },
+        {
+          "id": "fruit-shop-screen-6",
+          "title": "Fruit Shop — Interface View #7",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P156.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Fruit-Shop/"
+        },
+        {
+          "id": "fruit-shop-screen-7",
+          "title": "Fruit Shop — Interface View #8",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P157.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Fruit-Shop/"
+        },
+        {
+          "id": "fruit-shop-screen-8",
+          "title": "Fruit Shop — Interface View #9",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P158.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Fruit-Shop/"
+        },
+        {
+          "id": "fruit-shop-screen-9",
+          "title": "Fruit Shop — Interface View #10",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P159.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Fruit-Shop/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "et3lm-bsholah",
+      "title": "Et3lm Bsholah",
+      "subtitle": "HTML • CSS • JavaScript",
+      "tagline": "ُEt3lm Bsholah is a modern and responsive online education website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing online courses, instructors, and student testimonials.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Online Education",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/GDSC-M.E.T-Final-Project/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/GDSC-M.E.T-Final-Project",
+      "highlightRepos": [
+        {
+          "name": "GDSC-M.E.T-Final-Project",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/GDSC-M.E.T-Final-Project",
+          "description": "ُEt3lm Bsholah is a modern and responsive online education website template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing online courses, instructors, and student testimonials.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Online Education",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/Et3lmBsholah.jpeg",
+      "overview": "Et3lm Bsholah is an Arabic online education platform designed to make learning accessible and engaging. The website features course offerings, instructor profiles, student progress tracking, and interactive learning modules. Built with responsive design and modern UI/UX principles to serve Arabic-speaking educational communities.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Vanilla JS with HTML5, CSS3, JavaScript, Bootstrap, AOS",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "et3lm-bsholah-screen-0",
+          "title": "Et3lm Bsholah — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P160.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/GDSC-M.E.T-Final-Project/"
+        },
+        {
+          "id": "et3lm-bsholah-screen-1",
+          "title": "Et3lm Bsholah — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P161.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/GDSC-M.E.T-Final-Project/"
+        },
+        {
+          "id": "et3lm-bsholah-screen-2",
+          "title": "Et3lm Bsholah — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P162.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/GDSC-M.E.T-Final-Project/"
+        },
+        {
+          "id": "et3lm-bsholah-screen-3",
+          "title": "Et3lm Bsholah — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P163.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/GDSC-M.E.T-Final-Project/"
+        },
+        {
+          "id": "et3lm-bsholah-screen-4",
+          "title": "Et3lm Bsholah — Interface View #5",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P164.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/GDSC-M.E.T-Final-Project/"
+        },
+        {
+          "id": "et3lm-bsholah-screen-5",
+          "title": "Et3lm Bsholah — Interface View #6",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P165.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/GDSC-M.E.T-Final-Project/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "daniels-portfolio",
+      "title": "Daniels Portfolio",
+      "subtitle": "HTML • CSS • JavaScript",
+      "tagline": "Daniels Portfolio is a modern and responsive portfolio template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing personal projects and skills.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Portfolio",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/Daniels-Portfolio/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Daniels-Portfolio",
+      "highlightRepos": [
+        {
+          "name": "Daniels-Portfolio",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Daniels-Portfolio",
+          "description": "Daniels Portfolio is a modern and responsive portfolio template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing personal projects and skills.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Portfolio",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/DanielsPortfolio.jpeg",
+      "overview": "Daniels Portfolio is a professional portfolio website template built with Bootstrap framework. It showcases personal projects, skills, experience, and contact information. The template features smooth scrolling, animated sections, responsive design, and modern UI components suitable for developers and creative professionals.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Bootstrap with HTML5, CSS3, JavaScript, Bootstrap, jQuery",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "daniels-portfolio-screen-0",
+          "title": "Daniels Portfolio — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P170.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Daniels-Portfolio/"
+        },
+        {
+          "id": "daniels-portfolio-screen-1",
+          "title": "Daniels Portfolio — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P171.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Daniels-Portfolio/"
+        },
+        {
+          "id": "daniels-portfolio-screen-2",
+          "title": "Daniels Portfolio — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P172.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Daniels-Portfolio/"
+        },
+        {
+          "id": "daniels-portfolio-screen-3",
+          "title": "Daniels Portfolio — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/DanielsPortfolio.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Daniels-Portfolio/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "devspark-portfolio",
+      "title": "DevSpark Portfolio",
+      "subtitle": "HTML • CSS • JavaScript",
+      "tagline": "DevSpark Portfolio Template is a modern and responsive portfolio template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing personal projects and skills.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Portfolio",
+        "Web Template"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/DevSpark-Portfolio-Tamplete/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/DevSpark-Portfolio-Tamplete",
+      "highlightRepos": [
+        {
+          "name": "DevSpark-Portfolio-Tamplete",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/DevSpark-Portfolio-Tamplete",
+          "description": "DevSpark Portfolio Template is a modern and responsive portfolio template built with HTML, CSS, and JavaScript. It features a clean and elegant design for showcasing personal projects and skills.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Portfolio",
+            "Web Template"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/DevSparkPortfolioTemplate.jpeg",
+      "overview": "DevSpark Portfolio Template is a dynamic and modern portfolio website designed for developers and tech professionals. It features project showcases, skill demonstrations, experience timelines, and contact forms. The template includes interactive elements, smooth animations, and responsive design optimized for professional presentation.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Vanilla JS with HTML5, CSS3, JavaScript, GSAP, Typed.js",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "devspark-portfolio-screen-0",
+          "title": "DevSpark Portfolio — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P180.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DevSpark-Portfolio-Tamplete/"
+        },
+        {
+          "id": "devspark-portfolio-screen-1",
+          "title": "DevSpark Portfolio — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P181.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DevSpark-Portfolio-Tamplete/"
+        },
+        {
+          "id": "devspark-portfolio-screen-2",
+          "title": "DevSpark Portfolio — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P182.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DevSpark-Portfolio-Tamplete/"
+        },
+        {
+          "id": "devspark-portfolio-screen-3",
+          "title": "DevSpark Portfolio — Interface View #4",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P183.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DevSpark-Portfolio-Tamplete/"
+        },
+        {
+          "id": "devspark-portfolio-screen-4",
+          "title": "DevSpark Portfolio — Interface View #5",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P184.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DevSpark-Portfolio-Tamplete/"
+        },
+        {
+          "id": "devspark-portfolio-screen-5",
+          "title": "DevSpark Portfolio — Interface View #6",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P185.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DevSpark-Portfolio-Tamplete/"
+        },
+        {
+          "id": "devspark-portfolio-screen-6",
+          "title": "DevSpark Portfolio — Interface View #7",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P186.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/DevSpark-Portfolio-Tamplete/"
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "github-user-search",
+      "title": "Github User Search",
+      "subtitle": "HTML • CSS • JavaScript",
+      "tagline": "Github-User-Search is a web application that allows users to search for GitHub users and view their profiles, repositories, and other information. It is built using HTML, CSS, and JavaScript, providing a clean and user-friendly interface.",
+      "category": "Frontend Engineering",
+      "architectureLayers": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "GitHub API",
+        "Web Application"
+      ],
+      "liveUrl": "https://eng-ahmed-hussien.github.io/Github-User-Search/",
+      "githubUrl": "https://github.com/Eng-Ahmed-Hussien/Github-User-Search",
+      "highlightRepos": [
+        {
+          "name": "Github-User-Search",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Github-User-Search",
+          "description": "Github-User-Search is a web application that allows users to search for GitHub users and view their profiles, repositories, and other information. It is built using HTML, CSS, and JavaScript, providing a clean and user-friendly interface.",
+          "tech": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "GitHub API",
+            "Web Application"
+          ]
+        }
+      ],
+      "coverImage": "/assets/projects/GithubUserSearch.jpeg",
+      "overview": "Github User Search is a web application that integrates with the GitHub API to provide comprehensive user search functionality. Users can search for GitHub profiles, view repositories, followers, following, and detailed statistics. The application features responsive design, error handling, and real-time data fetching for an optimal user experience.",
+      "problem": "Designing and delivering a performant, accessible web solution with strict adherence to responsive design, smooth state updates, and clean component isolation.",
+      "architectureDetails": {
+        "frontend": "Vanilla JS with HTML5, CSS3, JavaScript, GitHub API, Fetch API",
+        "backend": "Serverless Edge Functions & REST Endpoints",
+        "infrastructure": "GitHub Pages with automated Git deployments",
+        "data": "Client state persistence, localized storage, and real-time API integrations"
+      },
+      "architectureFlow": [
+        {
+          "from": "Client Device",
+          "to": "Edge CDN (Vercel)",
+          "protocol": "HTTPS / HTTP2",
+          "label": "Static & Dynamic Asset Serving"
+        },
+        {
+          "from": "Edge CDN",
+          "to": "React Application Engine",
+          "protocol": "Virtual DOM",
+          "label": "Component Hydration"
+        },
+        {
+          "from": "React App",
+          "to": "External APIs / Services",
+          "protocol": "REST / JSON",
+          "label": "Data Ingestion & Mutators"
+        },
+        {
+          "from": "State Store",
+          "to": "UI Viewport",
+          "protocol": "Reactive Props",
+          "label": "60 FPS Render Cycle"
+        }
+      ],
+      "engineeringDecisions": [
+        {
+          "decision": "Modular Component Architecture",
+          "rationale": "Decouples presentation from business logic and data ingestion pipelines.",
+          "tradeoff": "Requires structured state contracts and strict TypeScript interfaces."
+        },
+        {
+          "decision": "Responsive Utility-First Styling (Tailwind CSS)",
+          "rationale": "Zero runtime CSS overhead with consistent design token constraints across viewports.",
+          "tradeoff": "Requires careful markup abstraction to maintain component cleanliness."
+        }
+      ],
+      "codeArtifact": {
+        "filename": "component-architecture.tsx",
+        "language": "typescript",
+        "description": "Responsive component design with optimized rendering and state boundaries.",
+        "code": "import React, { useTransition } from \"react\";\nimport { motion } from \"framer-motion\";\n\ninterface UIProps {\n  title: string;\n  items: string[];\n  onSelect: (item: string) => void;\n}\n\nexport const InteractiveView: React.FC<UIProps> = ({ title, items, onSelect }) => {\n  const [isPending, startTransition] = useTransition();\n\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: 8 }}\n      animate={{ opacity: 1, y: 0 }}\n      transition={{ duration: 0.3 }}\n      className=\"p-6 rounded-2xl border border-zinc-800 bg-zinc-900/70 backdrop-blur-xl shadow-lg\"\n    >\n      <h3 className=\"text-lg font-bold text-zinc-100 mb-4\">{title}</h3>\n      <div className=\"grid grid-cols-1 sm:grid-cols-2 gap-3\">\n        {items.map((item, idx) => (\n          <button\n            key={idx}\n            onClick={() => startTransition(() => onSelect(item))}\n            className=\"flex items-center justify-between p-3 rounded-lg border border-zinc-800/80 bg-zinc-950/60 text-xs font-mono text-zinc-300 hover:border-emerald-500/50 hover:text-emerald-400 transition-all\"\n          >\n            <span>{item}</span>\n            <span className=\"h-1.5 w-1.5 rounded-full bg-emerald-500\" />\n          </button>\n        ))}\n      </div>\n    </motion.div>\n  );\n};"
+      },
+      "screens": [
+        {
+          "id": "github-user-search-screen-0",
+          "title": "Github User Search — Interface View #1",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/GithubUserSearch.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Github-User-Search/"
+        },
+        {
+          "id": "github-user-search-screen-1",
+          "title": "Github User Search — Interface View #2",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P190.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Github-User-Search/"
+        },
+        {
+          "id": "github-user-search-screen-2",
+          "title": "Github User Search — Interface View #3",
+          "tag": "HTML",
+          "description": "Production interface capture showcasing responsive layout, visual fidelity, and data flows.",
+          "imagePath": "/assets/projects/P191.jpeg",
+          "simulatedUrl": "https://eng-ahmed-hussien.github.io/Github-User-Search/"
+        }
+      ],
+      "published": true
+    }
+  ],
+  "experiences": [
+    {
+      "id": "cyberlabs",
+      "role": "Founder & System Administrator",
+      "company": "CyberLabs",
+      "period": "2024 — Present",
+      "type": "Leadership / Platform Architecture",
+      "location": "Menofia, Egypt / Remote Worldwide",
+      "logo": "/assets/logo.svg",
+      "projectThumbnail": "/assets/projects/AdminDashboardV1.jpeg",
+      "summary": "Architected and orchestrated complete cloud infrastructure across DigitalOcean droplets and Cloudflare edge WAF. Led development of decoupled NestJS microservices and administrative consoles with strict Jira agile sprints and Bitbucket version protection.",
+      "responsibilities": [
+        "Architected three decoupled microservices: cyberlabs-admin, core backend API, and vm-service.",
+        "Configured Cloudflare Zero-Trust edge rules, custom WAF rate limiting, and SSL termination.",
+        "Provisioned DigitalOcean droplets inside isolated VPC networks with automated Docker compose orchestrations.",
+        "Orchestrated agile task delivery via Jira boards with strict epics, story points, and Bitbucket branch protection policies."
+      ],
+      "tools": [
+        "NestJS",
+        "DigitalOcean",
+        "Cloudflare",
+        "Docker",
+        "MongoDB Atlas",
+        "Redis",
+        "Jira",
+        "Bitbucket",
+        "TypeScript"
+      ],
+      "metrics": [
+        "3 Core Microservices",
+        "99.9% Infrastructure Uptime",
+        "Zero-Trust Edge Security"
+      ],
+      "repos": [
+        {
+          "name": "cyberlabs-admin",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/cyberlabs-admin",
+          "description": "Administrative console with role-based access control guards.",
+          "tech": [
+            "Next.js 15",
+            "TypeScript",
+            "Tailwind CSS"
+          ]
+        },
+        {
+          "name": "cyberlabs-backend",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/cyberlabs-backend",
+          "description": "Core transactional microservice API gateway.",
+          "tech": [
+            "NestJS",
+            "MongoDB Atlas",
+            "Redis"
+          ]
+        },
+        {
+          "name": "cyberlabs-vm-service",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/cyberlabs-vm-service",
+          "description": "Compute node provisioning daemon managing DigitalOcean droplets.",
+          "tech": [
+            "Node.js",
+            "Docker",
+            "Private RPC"
+          ]
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "selfEmployed",
+      "role": "Freelance Front‑End Developer",
+      "company": "Self Employed",
+      "period": "October 2023 — Present",
+      "type": "Freelance Full Stack / Front-End Engineer",
+      "location": "Remote Worldwide",
+      "logo": "/assets/myImage.png",
+      "projectThumbnail": "/assets/projects/FreshCartEcommerce.jpeg",
+      "summary": "As a freelance front-end developer, I've had the opportunity to work with diverse clients across different industries. My focus is on creating accessible and performant web apps that provide great UX.",
+      "responsibilities": [
+        "Gather client requirements",
+        "Convert mockups into responsive UIs",
+        "Use modern JavaScript frameworks",
+        "Optimize for performance and SEO",
+        "Cross-browser testing",
+        "Maintain and update projects"
+      ],
+      "tools": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Firebase",
+        "Vercel",
+        "Git",
+        "Figma"
+      ],
+      "metrics": [
+        "15+ Client Projects Delivered",
+        "100% Client Satisfaction",
+        "60% Page Load Time Reduction"
+      ],
+      "repos": [
+        {
+          "name": "Simple-Fresh-Cart-Ecommerce",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Simple-Fresh-Cart-Ecommerce",
+          "description": "Full-featured e-commerce web platform with product catalogs, shopping cart, and auth.",
+          "tech": [
+            "React",
+            "Tailwind CSS",
+            "Axios"
+          ]
+        },
+        {
+          "name": "Ethan-Portfolio-Template-using-NextJs",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Ethan-Portfolio-Template-using-NextJs",
+          "description": "Modern portfolio template built with Next.js and Framer Motion.",
+          "tech": [
+            "Next.js",
+            "Tailwind CSS",
+            "Framer Motion"
+          ]
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "ieeeInstructor",
+      "role": "Front‑End Instructor",
+      "company": "IEEE MSB – Menofia University",
+      "period": "March 2024 — May 2025",
+      "type": "Technical Leadership & Instruction",
+      "location": "Menofia University",
+      "logo": "/assets/educat/college1.jpg",
+      "projectThumbnail": "/assets/projects/VsCodeClone.jpeg",
+      "summary": "Designed and conducted a structured 8-week front-end curriculum, including projects, quizzes, and reviews.",
+      "responsibilities": [
+        "Prepare and deliver weekly lessons",
+        "Assess student progress",
+        "Provide mentorship and feedback"
+      ],
+      "tools": [
+        "React.js",
+        "JavaScript (ES6+)",
+        "Tailwind CSS",
+        "Git",
+        "GitHub"
+      ],
+      "metrics": [
+        "80+ Students Mentored",
+        "Custom 8-Week Curriculum",
+        "Hands-On Project Labs"
+      ],
+      "repos": [
+        {
+          "name": "Vs_code_clone",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/Vs_code_clone",
+          "description": "Browser-based code editor built for student demonstration.",
+          "tech": [
+            "React",
+            "TypeScript",
+            "Vite"
+          ]
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "deltaInstructor",
+      "role": "Front‑End Instructor",
+      "company": "IEEE Delta Academy – Menofia University",
+      "period": "June 2024 — January 2025",
+      "type": "Mentorship & Technical Workshop",
+      "location": "Menofia University",
+      "logo": "/assets/educat/college2.jpg",
+      "projectThumbnail": "/assets/projects/FrontendMentorProjects.jpeg",
+      "summary": "Conducted practical sessions and guided students through portfolio projects and Git usage.",
+      "responsibilities": [
+        "Weekly live sessions",
+        "Code reviews",
+        "Help students complete portfolio projects"
+      ],
+      "tools": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Git",
+        "GitHub",
+        "Responsive Design"
+      ],
+      "metrics": [
+        "60+ Students Mentored",
+        "Live Code-Alongs Hosted",
+        "Portfolio Reviews"
+      ],
+      "repos": [
+        {
+          "name": "frontend__mentor--projects",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/frontend__mentor--projects",
+          "description": "Curated collection of frontend mentor tasks with multi-theme support.",
+          "tech": [
+            "React",
+            "CSS Modules",
+            "Context API"
+          ]
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "eduko",
+      "role": "Full Stack Collaborator",
+      "company": "Eduko Platform",
+      "period": "2024 — Present",
+      "type": "Platform Engineering",
+      "location": "Remote",
+      "logo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=200&q=80",
+      "projectThumbnail": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=1200&q=80",
+      "summary": "Co-developed high-performance frontend interfaces for Eduko using Next.js App Router and React 19. Established automated continuous integration pipelines via GitHub Actions targeting Vercel edge deployment.",
+      "responsibilities": [
+        "Engineered responsive, accessible client interfaces leveraging Next.js App Router and React 19.",
+        "Implemented comprehensive client-side data fetching with aggressive caching and optimistic UI updates.",
+        "Integrated CI/CD automation via GitHub Actions to execute automated linting, test suites, and Vercel edge deployments.",
+        "Conducted collaborative code reviews and PR gating adhering to strict frontend performance benchmarks."
+      ],
+      "tools": [
+        "Next.js 16",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS",
+        "GitHub Actions",
+        "Vercel",
+        "Jest"
+      ],
+      "metrics": [
+        "Sub-Second Page Loads",
+        "100% Automated Deployment",
+        "98/100 Lighthouse Performance"
+      ],
+      "repos": [
+        {
+          "name": "ahmedhabiby/Eduko1",
+          "repoUrl": "https://github.com/ahmedhabiby/Eduko1",
+          "description": "Modern educational platform frontend built with Next.js App Router and automated CI/CD.",
+          "tech": [
+            "Next.js 16",
+            "React 19",
+            "Vercel",
+            "GitHub Actions"
+          ]
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "itiSummer",
+      "role": "Front‑End Developer Using Angular (Internship)",
+      "company": "ITI Menoufia (Summer Training)",
+      "period": "July 2024 — August 2024",
+      "type": "Intensive Engineering Internship",
+      "location": "Menofia ITI",
+      "logo": "/certificates/iti-angular.jpeg",
+      "projectThumbnail": "/assets/projects/ArshaBootstrapTemplate.jpeg",
+      "summary": "Learned how to develop SPAs using Angular, RxJS, and TypeScript. Built sample dashboards and forms.",
+      "responsibilities": [
+        "Attend daily sessions",
+        "Build assigned Angular modules",
+        "Submit Git-based tasks"
+      ],
+      "tools": [
+        "Angular",
+        "TypeScript",
+        "RxJS",
+        "SCSS",
+        "Bootstrap",
+        "Git"
+      ],
+      "metrics": [
+        "120 Hours Intensive Training",
+        "Single Page Applications (SPA)",
+        "Reactive Architecture"
+      ],
+      "repos": [
+        {
+          "name": "ITI-_Angular_Bootstrap_Task",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/ITI-_Angular_Bootstrap_Task",
+          "description": "Responsive web application built during ITI Menoufia training.",
+          "tech": [
+            "Bootstrap",
+            "JavaScript",
+            "HTML5"
+          ]
+        }
+      ],
+      "published": true
+    },
+    {
+      "id": "gdscMet",
+      "role": "Front‑End Trainee",
+      "company": "Google Developer Student Clubs (GDSC Menofia & MET)",
+      "period": "November 2022 — October 2023",
+      "type": "Technical Trainee & Active Contributor",
+      "location": "Menoufia University",
+      "logo": "/certificates/gdsc-training.png",
+      "projectThumbnail": "/assets/projects/Et3lmBsholah.jpeg",
+      "summary": "Improved hands-on coding skills and participated in collaborative tasks and mentorship discussions.",
+      "responsibilities": [
+        "Attend weekly technical sessions",
+        "Work on GitHub-shared projects",
+        "Contribute in code reviews"
+      ],
+      "tools": [
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Git",
+        "GitHub"
+      ],
+      "metrics": [
+        "Top 5 Active Learner Award",
+        "12+ Completed Tasks",
+        "Collaborative Team Work"
+      ],
+      "repos": [
+        {
+          "name": "GDSC-M.E.T-Final-Project",
+          "repoUrl": "https://github.com/Eng-Ahmed-Hussien/GDSC-M.E.T-Final-Project",
+          "description": "Online education platform built as the final graduation project for GDSC MET.",
+          "tech": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Bootstrap"
+          ]
+        }
+      ],
+      "published": true
+    }
+  ],
+  "certificates": [
+    {
+      "id": "cert-2889",
+      "title": "Accredited Technical Certification nnnnnnnnnn",
+      "issuer": "Accrediting Body",
+      "issuerCategory": "Google / Tech Community",
+      "issueDate": "2025",
+      "imagePath": "/certificates/ahmed hussain-01.png",
+      "tags": [
+        "Full Stack",
+        "Engineering"
+      ],
+      "description": "Engineering accreditation details.bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "published": true
+    },
+    {
+      "id": "iti-angular",
+      "title": "Front End Web Development using Angular (120 hrs)",
+      "issuer": "Information Technology Institute (ITI) — CREATIVA Menofia",
+      "issuerCategory": "Academy / Institute",
+      "issueDate": "August 2024",
+      "imagePath": "/certificates/iti-angular.jpeg",
+      "tags": [
+        "Angular",
+        "TypeScript",
+        "ES.Next",
+        "HTML5/CSS3",
+        "Bootstrap"
+      ],
+      "description": "Comprehensive 120-hour intensive engineering track certified by ITI Chairman Dr. Heba Saleh and CREATIVA Menofia covering client-side architectures, modular Angular components, and reactive design patterns.",
+      "published": true
+    },
+    {
+      "id": "digitopia-phase2",
+      "title": "DIGITOPIA National Innovation — Cybersecurity Track (Phase 2 Finisher)",
+      "issuer": "Ministry of Communications & Information Technology (MCIT Egypt)",
+      "issuerCategory": "Government / Ministry",
+      "issueDate": "2025 Edition",
+      "imagePath": "/certificates/digitopia-phase2.jpeg",
+      "tags": [
+        "Cybersecurity",
+        "Zero-Trust",
+        "Infrastructure",
+        "MCIT Egypt",
+        "National Competition"
+      ],
+      "description": "Honored by the Egyptian Ministry of Communications and Information Technology (MCIT) for qualifying and advancing through Phase 2 in the national innovation competition DIGITOPIA in the Cybersecurity domain.",
+      "published": false
+    },
+    {
+      "id": "digitopia-solutions",
+      "title": "DIGITOPIA Technology Solutions — Cybersecurity Domain",
+      "issuer": "Ministry of Communications & Information Technology (MCIT Egypt)",
+      "issuerCategory": "Government / Ministry",
+      "issueDate": "2025 Edition",
+      "imagePath": "/certificates/digitopia-solutions.jpeg",
+      "tags": [
+        "Cybersecurity",
+        "Network Hardening",
+        "National Solutions",
+        "MCIT"
+      ],
+      "description": "Certificate of Appreciation from MCIT in partnership with ITI, NTI, ITIDA, UNDP, Cisco, and Huawei for innovative software engineering in the technological solutions phase.",
+      "published": true
+    },
+    {
+      "id": "gdsc-training",
+      "title": "Front End Engineering Track (2023-2024 Academic Year)",
+      "issuer": "Google Developer Student Clubs (GDSC MET)",
+      "issuerCategory": "Google / Tech Community",
+      "issueDate": "April 13, 2024",
+      "credentialId": "OG50-750B71H05U",
+      "verificationUrl": "https://gdsc-certificates.web.app/c/OG50-750B71H05U",
+      "imagePath": "/certificates/gdsc-training.png",
+      "tags": [
+        "Google GDSC",
+        "Frontend Engineering",
+        "React",
+        "Web Standards"
+      ],
+      "description": "Official Certificate of Appreciation for successfully graduating from the intensive year-long Front End track under Google Developer Student Clubs with verified online credential ID.",
+      "published": true
+    },
+    {
+      "id": "gdsc-frontend",
+      "title": "Fundamentals of Frontend Development",
+      "issuer": "Google Developer Student Clubs (GDSC Menofia University)",
+      "issuerCategory": "Google / Tech Community",
+      "issueDate": "August 2023",
+      "imagePath": "/certificates/gdsc-frontend.png",
+      "tags": [
+        "Google GDSC",
+        "JavaScript",
+        "DOM Architecture",
+        "CSS3"
+      ],
+      "description": "Certificate of Appreciation awarded by GDSC Menofia University acknowledging high-distinction mastery of modern web frontend fundamentals.",
+      "published": true
+    },
+    {
+      "id": "networking-basics",
+      "title": "Basics of Computer Networking & Protocols",
+      "issuer": "Great Learning Academy",
+      "issuerCategory": "Academy / Institute",
+      "issueDate": "April 2024",
+      "credentialId": "KJGYQSKM",
+      "verificationUrl": "https://verify.mygreatlearning.com/KJGYQSKM",
+      "imagePath": "/certificates/networking-basics.jpeg",
+      "tags": [
+        "Networking",
+        "TCP/IP",
+        "DNS",
+        "HTTP/HTTPS",
+        "Subnetting"
+      ],
+      "description": "Accredited certification covering OSI reference model, TCP/IP protocol suite, socket topologies, and modern network security fundamentals.",
+      "published": true
+    }
+  ]
+}

@@ -1,27 +1,38 @@
 import { NextResponse } from "next/server";
 
 const SYSTEM_PROMPT = `
-You are the AI assistant for Ahmed Hussien, an elite Full Stack Software Engineer and Founder of CyberLabs. You speak with a calm, highly professional tone. Ahmed specializes in pure software engineering, scalable cloud architecture (DigitalOcean, Cloudflare, Railway), and modern web frameworks (Next.js, React, Node.js, NestJS, MongoDB Atlas). He uses tools like Jira and Bitbucket for enterprise-grade workflows. Do NOT discuss hardware or embedded systems. Guide visitors to view his work on CyberLabs or Eduko.
+You are the technical AI assistant for Ahmed Hussien, a Senior Full Stack Software Engineer and Founder of CyberLabs.
+Persona: Senior Staff Engineer.
+Tone: Concise, authoritative, deeply technical, and strictly focused on modern web platforms and distributed cloud systems.
+Core Expertise:
+- Backend: Modular microservices with NestJS, Node.js, Express, REST/gRPC interfaces, JWT token validation, custom ExecutionContext guards.
+- Frontend: Next.js 15/16 App Router, React 19 Server Components, Server Actions, on-demand cache revalidation (revalidateTag), TypeScript, HTML5 Canvas GPU rendering.
+- Cloud & Infrastructure: DigitalOcean Droplets (private VPC), Cloudflare Zero-Trust/WAF/DNS, Docker, Vercel edge deployment, Railway.
+- Data Tier: MongoDB Atlas multi-region replica sets with read preferences, PostgreSQL via Prisma, Redis caching.
+- Delivery: Enterprise Jira agile sprint orchestration, Bitbucket branch protection, GitHub Actions CI/CD.
+Constraint: Strictly pure software engineering. Never discuss hardware, IoT, or embedded systems. Guide visitors directly to inspect his architectural case studies on CyberLabs or Eduko.
 `;
 
-const QUICK_RESPONSES: Record<string, string> = {
+const STAFF_RESPONSES: Record<string, string> = {
   stack:
-    "Ahmed specializes in pure software engineering across the stack: Next.js (15/16 App Router) and React on the frontend; NestJS and Node.js for microservices; MongoDB Atlas and Redis for distributed data; and DigitalOcean, Cloudflare, and Railway for cloud architecture. He employs Jira and Bitbucket for enterprise agile delivery.",
+    "Ahmed's production stack is strictly pure software engineering: Next.js 15/16 (App Router & Server Actions) and React 19 on the frontend; NestJS and Node.js for decoupled microservices; MongoDB Atlas and Redis for distributed persistence; with cloud infrastructure orchestrated across DigitalOcean VPC and Cloudflare Zero-Trust edge.",
   cyberlabs:
-    "CyberLabs is Ahmed's software engineering venture where he serves as Founder & System Administrator. He architected the cloud backbone across DigitalOcean and Cloudflare, managed backend microservices (including cyberlabs-admin and vm-service), and scaled multi-region MongoDB Atlas databases.",
+    "At CyberLabs, Ahmed serves as Founder & System Administrator. He architected the microservices fleet isolating 'cyberlabs-admin' (port 4001, RBAC controls) from 'backend' (port 4000, transactional API) and 'vm-service' (port 4002, compute node RPC), shielded behind Cloudflare WAF and DigitalOcean VPC private subnets.",
   eduko:
-    "At Eduko, Ahmed co-developed the platform frontend utilizing Next.js (15/16) and React, while managing automated CI/CD deployment pipelines via GitHub Actions and Vercel for continuous zero-downtime delivery.",
+    "For Eduko, Ahmed led the frontend migration to Next.js App Router and React Server Components. He implemented on-demand cache invalidation using atomic 'revalidateTag()' triggers within Server Actions and established automated GitHub Actions CI/CD pipelines deploying to Vercel.",
   streaming:
-    "As an Integration Specialist, Ahmed engineered real-time RTSP video streaming directly into custom React dashboards (<300ms latency) and integrated state-of-the-art Text-to-Speech (TTS) AI APIs for automated Arabic voiceovers.",
+    "As an Integration Specialist, Ahmed bypassed browser RTSP playback constraints by streaming binary demuxed packets over WebSockets (<300ms latency) directly into hardware-accelerated HTML5 Canvas contexts at 60 FPS, coupled with automated Arabic neural Text-to-Speech (TTS) voice alert dispatching.",
   contact:
-    "You can reach Ahmed through the Contact section on this portfolio, download his CV directly via the navigation bar or CMD+K menu, or inquire about software engineering leadership and cloud architecture contracts.",
+    "You can reach Ahmed directly via email at ahmedHussien1352@gmail.com, view his verified GitHub repositories at github.com/Eng-Ahmed-Hussien, or download his official resume via the navigation bar and CMD+K palette.",
+  architecture:
+    "Ahmed prioritizes decoupled domain boundaries, strict compile-time TypeScript type safety, ExecutionContext role guards in NestJS, and edge-first caching strategies to eliminate latency and database write contention.",
 };
 
 export async function POST(req: Request) {
   try {
     const { message } = await req.json();
     if (!message || typeof message !== "string") {
-      return NextResponse.json({ error: "Invalid message" }, { status: 400 });
+      return NextResponse.json({ error: "Invalid message payload" }, { status: 400 });
     }
 
     const lower = message.toLowerCase();
@@ -40,7 +51,7 @@ export async function POST(req: Request) {
                   role: "user",
                   parts: [
                     {
-                      text: `${SYSTEM_PROMPT}\n\nUser Question: ${message}\nAnswer with a calm, highly professional tone:`,
+                      text: `${SYSTEM_PROMPT}\n\nUser Question: ${message}\nRespond as Ahmed's Senior Staff Engineer assistant:`,
                     },
                   ],
                 },
@@ -53,68 +64,78 @@ export async function POST(req: Request) {
           const data = await response.json();
           const reply =
             data?.candidates?.[0]?.content?.parts?.[0]?.text ||
-            "Ahmed specializes in pure software engineering and cloud architecture. How can I guide you through his work?";
+            "Ahmed specializes in pure software architecture and cloud infrastructure. How can I direct you through his case studies?";
           return NextResponse.json({ reply });
         }
       } catch (err) {
-        console.error("Gemini API error, falling back to local brain:", err);
+        console.error("Gemini API error, activating deterministic staff engine:", err);
       }
     }
 
-    // Contextual local fallback adhering strictly to the system prompt
+    // Deterministic Senior Staff Engineer fallback
     let reply =
-      "Greetings. I am Ahmed Hussien's AI assistant. Ahmed is an elite Full Stack Software Engineer and Founder of CyberLabs, specializing in scalable cloud architecture, modern web frameworks, and enterprise software engineering. Would you like to explore his work on CyberLabs or Eduko?";
+      "Greetings. I am Ahmed Hussien's technical assistant. Ahmed is a Full Stack Software Engineer and Founder of CyberLabs, specializing in modular NestJS microservices, Next.js App Router frontends, and cloud infrastructure across DigitalOcean and Cloudflare. Which architectural case study would you like to examine?";
 
     if (
       lower.includes("tech") ||
       lower.includes("stack") ||
       lower.includes("skill") ||
-      lower.includes("framework")
+      lower.includes("tool")
     ) {
-      reply = QUICK_RESPONSES.stack;
+      reply = STAFF_RESPONSES.stack;
     } else if (
       lower.includes("cyberlabs") ||
       lower.includes("founder") ||
       lower.includes("vm") ||
       lower.includes("admin")
     ) {
-      reply = QUICK_RESPONSES.cyberlabs;
+      reply = STAFF_RESPONSES.cyberlabs;
     } else if (
       lower.includes("eduko") ||
       lower.includes("education") ||
-      lower.includes("learning")
+      lower.includes("learning") ||
+      lower.includes("action")
     ) {
-      reply = QUICK_RESPONSES.eduko;
+      reply = STAFF_RESPONSES.eduko;
     } else if (
       lower.includes("rtsp") ||
       lower.includes("stream") ||
       lower.includes("video") ||
-      lower.includes("voice") ||
       lower.includes("tts") ||
-      lower.includes("arabic")
+      lower.includes("canvas")
     ) {
-      reply = QUICK_RESPONSES.streaming;
+      reply = STAFF_RESPONSES.streaming;
+    } else if (
+      lower.includes("architecture") ||
+      lower.includes("design") ||
+      lower.includes("microservice") ||
+      lower.includes("guard")
+    ) {
+      reply = STAFF_RESPONSES.architecture;
     } else if (
       lower.includes("contact") ||
-      lower.includes("hire") ||
       lower.includes("email") ||
+      lower.includes("hire") ||
+      lower.includes("github") ||
+      lower.includes("linkedin") ||
       lower.includes("cv") ||
       lower.includes("resume")
     ) {
-      reply = QUICK_RESPONSES.contact;
+      reply = STAFF_RESPONSES.contact;
     } else if (
       lower.includes("hardware") ||
       lower.includes("iot") ||
       lower.includes("embedded") ||
-      lower.includes("arduino")
+      lower.includes("arduino") ||
+      lower.includes("raspberry")
     ) {
       reply =
-        "Ahmed is strictly focused on pure software engineering, scalable cloud architecture, and modern web applications. His work centers exclusively on high-performance distributed software systems.";
+        "Ahmed's architectural scope is strictly confined to pure software engineering, distributed cloud infrastructure, and modern web platforms. Hardware and embedded systems are outside his operational domain.";
     }
 
     return NextResponse.json({ reply });
   } catch (error) {
-    console.error("Chat API error:", error);
+    console.error("Chat endpoint error:", error);
     return NextResponse.json(
       { error: "Internal server error" },
       { status: 500 }

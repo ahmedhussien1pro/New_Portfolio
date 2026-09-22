@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import {
@@ -29,8 +30,9 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "Projects", href: "/#projects" },
+    { name: "Projects", href: "/projects" },
     { name: "Experience", href: "/experience" },
+    { name: "Certificates", href: "/certificates" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -48,8 +50,14 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand / Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-950 shadow-md transition-transform group-hover:scale-105 border border-zinc-800 dark:border-zinc-200">
-            <Terminal className="h-4 w-4 text-emerald-500 transition-transform group-hover:rotate-6" />
+          <div className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-zinc-950 p-1 shadow-md transition-transform group-hover:scale-105 border border-zinc-800">
+            <Image
+              src="/assets/logo.svg"
+              alt="Ahmed Hussien Logo"
+              width={26}
+              height={26}
+              className="object-contain transition-transform group-hover:rotate-6"
+            />
           </div>
           <div className="flex flex-col">
             <span className="font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 text-sm flex items-center gap-1.5">

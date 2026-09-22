@@ -1,0 +1,201 @@
+{
+  "selfEmployed": {
+    "id": "selfEmployed",
+    "organization": "Self Employed",
+    "role": "Freelance Front‑End Developer",
+    "start": "October 2023",
+    "end": "Present",
+    "type": "freelance",
+    "location": "Remote Worldwide",
+    "description": "Building modern, responsive web applications for clients worldwide. Specializing in React.js, Next.js, and modern CSS frameworks.",
+    "longDescription": "As a freelance front-end developer, I've had the opportunity to work with diverse clients across different industries. My focus is on creating accessible and performant web apps that provide great UX.",
+    "achievements": [
+      "Delivered 15+ client projects across industries",
+      "100% client satisfaction with repeat work",
+      "Specialized in e-commerce boosting client revenue by 40%",
+      "Implemented SEO strategies improving rankings",
+      "Reduced page load times by 60%",
+      "Built mobile-first responsive UIs"
+    ],
+    "responsibilities": [
+      "Gather client requirements",
+      "Convert mockups into responsive UIs",
+      "Use modern JavaScript frameworks",
+      "Optimize for performance and SEO",
+      "Cross-browser testing",
+      "Maintain and update projects"
+    ],
+    "projects": [
+      {
+        "name": "E-commerce Fashion Platform",
+        "description": "Online store with full payment and cart system",
+        "technologies": ["React.js", "Next.js", "Stripe", "Tailwind CSS"]
+      },
+      {
+        "name": "Real Estate Listings",
+        "description": "Search/filterable platform for renting and buying properties",
+        "technologies": ["React.js", "Firebase", "Google Maps API", "Material-UI"]
+      },
+      {
+        "name": "Restaurant Website",
+        "description": "Responsive website for online ordering and multi-branch management",
+        "technologies": ["Next.js", "Sanity CMS", "PayPal", "Framer Motion"]
+      }
+    ],
+    "technologies": ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Firebase", "Vercel", "Git", "Figma"],
+    "skills": ["Client Communication", "Project Management", "UI/UX Implementation", "Performance Optimization", "SEO", "Responsive Design"],
+    "impact": "Helped clients grow digitally through fast, modern, and elegant websites."
+  },
+
+  "ieeeMsb": {
+    "id": "ieeeMsb",
+    "organization": "IEEE MSB",
+    "role": "Front‑End Trainee",
+    "start": "September 2021",
+    "end": "June 2023",
+    "type": "volunteer",
+    "location": "Menoufia University",
+    "description": "Joined IEEE MSB to learn and grow in the front-end field through workshops and hands-on sessions.",
+    "longDescription": "As a trainee, I participated in multiple training programs, followed structured learning paths, and built mini projects to enhance practical skills.",
+    "achievements": [
+      "Completed over 12 hands-on tasks",
+      "Assisted in junior training programs",
+      "Showcased projects in student exhibitions"
+    ],
+    "responsibilities": [
+      "Attend weekly sessions and workshops",
+      "Apply concepts in weekly assignments",
+      "Collaborate with peers on small projects"
+    ],
+    "projects": [],
+    "technologies": ["HTML5", "CSS3", "JavaScript", "GitHub"],
+    "skills": ["Team Collaboration", "Continuous Learning", "Debugging"],
+    "impact": "Built a strong base in front-end development through structured student training."
+  },
+
+  "gdscMet": {
+    "id": "gdscMet",
+    "organization": "GDSC MET",
+    "role": "Front‑End Trainee",
+    "start": "November 2022",
+    "end": "October 2023",
+    "type": "training",
+    "location": "Menoufia University",
+    "description": "Participated in front-end and JavaScript track in GDSC MET sessions.",
+    "longDescription": "Improved hands-on coding skills and participated in collaborative tasks and mentorship discussions.",
+    "achievements": [
+      "Completed JavaScript projects during training",
+      "Collaborated on GitHub-based tasks",
+      "Selected among top 5 active learners"
+    ],
+    "responsibilities": [
+      "Attend weekly technical sessions",
+      "Work on GitHub-shared projects",
+      "Contribute in code reviews"
+    ],
+    "projects": [],
+    "technologies": ["HTML", "CSS", "JavaScript", "Git"],
+    "skills": ["Pair Programming", "Open Source Contribution"],
+    "impact": "Accelerated learning through real project simulations."
+  },
+
+  "gdscMenofia": {
+    "id": "gdscMenofia",
+    "organization": "GDSC Menofia",
+    "role": "Front‑End Trainee",
+    "start": "September 2022",
+    "end": "February 2022",
+    "type": "training",
+    "location": "Menoufia University",
+    "description": "Enrolled in front-end training bootcamp hosted by GDSC Menofia.",
+    "longDescription": "Covered fundamentals and worked on small tasks related to DOM manipulation and UI creation.",
+    "achievements": [],
+    "responsibilities": [
+      "Attend bootcamp workshops",
+      "Submit weekly assignments",
+      "Engage in feedback sessions"
+    ],
+    "projects": [],
+    "technologies": ["HTML", "CSS", "JavaScript"],
+    "skills": ["Fundamentals", "Learning Agility"],
+    "impact": "Gained practical exposure to front-end basics."
+  },
+
+  "ieeeInstructor": {
+    "id": "ieeeInstructor",
+    "organization": "IEEE MSB – Menofia University",
+    "role": "Front‑End Instructor",
+    "start": "March 2024",
+    "end": "May 2025",
+    "type": "volunteer",
+    "location": "Menofia University",
+    "description": "Lead instructor for front-end development track.",
+    "longDescription": "Designed and conducted a structured 8-week front-end curriculum, including projects, quizzes, and reviews.",
+    "achievements": [
+      "Taught over 80+ students",
+      "Built a custom curriculum",
+      "Helped students land internships"
+    ],
+    "responsibilities": [
+      "Prepare and deliver weekly lessons",
+      "Assess student progress",
+      "Provide mentorship and feedback"
+    ],
+    "projects": [],
+    "technologies": ["React.js", "JavaScript", "Tailwind CSS"],
+    "skills": ["Teaching", "Curriculum Design", "Public Speaking"],
+    "impact": "Contributed to student career growth by delivering job-ready skills."
+  },
+
+  "deltaInstructor": {
+    "id": "deltaInstructor",
+    "organization": "IEEE Delta Academy – Menofia University",
+    "role": "Front‑End Instructor",
+    "start": "June 2024",
+    "end": "January 2025",
+    "type": "volunteer",
+    "location": "Menofia University",
+    "description": "Mentor and instructor for Delta Academy's front-end training.",
+    "longDescription": "Conducted practical sessions and guided students through portfolio projects and Git usage.",
+    "achievements": [
+      "Mentored a batch of 60+ students",
+      "Hosted live code-alongs",
+      "Introduced Git/GitHub training"
+    ],
+    "responsibilities": [
+      "Weekly live sessions",
+      "Code reviews",
+      "Help students complete portfolio projects"
+    ],
+    "projects": [],
+    "technologies": ["HTML", "CSS", "JavaScript", "Git"],
+    "skills": ["Mentorship", "Code Review", "Leadership"],
+    "impact": "Prepared students for real-world freelance and job opportunities."
+  },
+
+  "itiSummer": {
+    "id": "itiSummer",
+    "organization": "ITI Menoufia (Summer Training)",
+    "role": "Front‑End Developer Using Angular (Internship)",
+    "start": "July 2024",
+    "end": "August 2024",
+    "type": "internship",
+    "location": "Menofia ITI",
+    "description": "Participated in a professional training on Angular and component-based development.",
+    "longDescription": "Learned how to develop SPAs using Angular, RxJS, and TypeScript. Built sample dashboards and forms.",
+    "achievements": [
+      "Built a CRUD Angular app",
+      "Worked in teams with Git version control",
+      "Completed daily code challenges"
+    ],
+    "responsibilities": [
+      "Attend daily sessions",
+      "Build assigned Angular modules",
+      "Submit Git-based tasks"
+    ],
+    "projects": [],
+    "technologies": ["Angular", "TypeScript", "RxJS", "SCSS"],
+    "skills": ["Component-based Design", "Observables", "Team Collaboration"],
+    "impact": "Gained real-work internship experience using Angular and modern tools."
+  }
+}

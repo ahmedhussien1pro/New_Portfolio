@@ -12,27 +12,44 @@ import {
   Code2,
   Shield,
   FileCode,
+  GitBranch,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { CASE_STUDIES } from "@/lib/data";
+import { getPortfolioStore } from "@/lib/store";
 import { CodeBlock } from "@/components/code-block";
 import { ArchitectureDiagram } from "@/components/architecture-diagram";
+import { ImageGallery } from "@/components/image-gallery";
+
+function GithubIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        fillRule="evenodd"
+        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+}
 
 interface ProjectPageProps {
   params: Promise<{ id: string }>;
 }
 
 export async function generateStaticParams() {
-  return CASE_STUDIES.map((study) => ({
+  const store = getPortfolioStore();
+  return store.projects.map((study) => ({
     id: study.id,
   }));
 }
 
 export default async function ProjectDetailPage({ params }: ProjectPageProps) {
   const { id } = await params;
-  const study = CASE_STUDIES.find((s) => s.id === id);
+  const store = getPortfolioStore();
+  const study = store.projects.find((s) => s.id === id) || CASE_STUDIES.find((s) => s.id === id);
 
-  if (!study) {
+  if (!study || study.published === false) {
     notFound();
   }
 
@@ -148,16 +165,78 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
       </section>
 
       {/* =========================================================================
-          SECTION 3: INTERACTIVE SYSTEM TOPOLOGY & DATA FLOW
+          SECTION 3: INTERACTIVE SYSTEM TOPOLOGY & PROTOCOL FLOW
           ========================================================================= */}
       <section className="space-y-4">
-        <div className="text-xs font-mono font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
-          02. System Topology & Protocol Flow
-        </div>
-        <h2 className="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
-          Pipeline Flow Architecture
-        </h2>
-        <ArchitectureDiagram flow={study.architectureFlow} />
+        <ArchitectureDiagram projectId={study.id} />
+      </section>
+
+      {/* =========================================================================
+          SECTION 3.5: REPOSITORY & CODEBASE ARCHITECTURE
+          ========================================================================= */}
+      {study.highlightRepos && study.highlightRepos.length > 0 && (
+        <section className="space-y-4">
+          <div className="flex items-center gap-2 text-xs font-mono font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+            <GitBranch className="h-4 w-4" />
+            <span>Target Repositories & Microservice Fleet</span>
+          </div>
+          <div className="space-y-1">
+            <h2 className="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
+              Decoupled Codebases & Repositories
+            </h2>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 max-w-2xl">
+              Each microservice and client application is engineered in an isolated repository adhering to strict type safety, modular boundaries, and independent CI/CD build cycles.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
+            {study.highlightRepos.map((repo) => (
+              <a
+                key={repo.name}
+                href={repo.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative flex flex-col justify-between rounded-xl border border-zinc-200/80 dark:border-white/10 bg-white/60 dark:bg-zinc-900/60 p-5 backdrop-blur-xl transition-all duration-300 hover:border-emerald-500/40 hover:shadow-[0_0_30px_rgba(16,185,129,0.08)] cursor-pointer"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 group-hover:text-emerald-500 transition-colors">
+                        <GithubIcon className="h-4 w-4" />
+                      </div>
+                      <span className="font-mono text-sm font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-emerald-500 dark:group-hover:text-emerald-400 transition-colors">
+                        {repo.name}
+                      </span>
+                    </div>
+                    <ExternalLink className="h-3.5 w-3.5 text-zinc-400 group-hover:text-emerald-500 transition-colors" />
+                  </div>
+
+                  <p className="text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
+                    {repo.description}
+                  </p>
+                </div>
+
+                <div className="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex flex-wrap gap-1.5">
+                  {repo.tech.map((t) => (
+                    <span
+                      key={t}
+                      className="rounded bg-zinc-100 dark:bg-zinc-800/80 px-2 py-0.5 text-[10px] font-mono text-zinc-600 dark:text-zinc-400"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* =========================================================================
+          SECTION 4: OPERATIONAL INTERFACES & PRODUCTION GALLERY
+          ========================================================================= */}
+      <section className="space-y-4">
+        <ImageGallery screens={study.screens} title="Operational Interfaces & Production Dashboards" />
       </section>
 
       {/* =========================================================================
