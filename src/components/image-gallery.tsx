@@ -119,7 +119,7 @@ export function ImageGallery({ screens, title = "Production Interface Gallery" }
                   alt={screen.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover grayscale transition-all duration-500 hover:grayscale-0 group-hover:grayscale-0 group-hover:scale-105"
                   priority={idx === 0}
                 />
               </div>
@@ -139,18 +139,13 @@ export function ImageGallery({ screens, title = "Production Interface Gallery" }
       )}
 
       {/* Carousel Mode */}
-      {viewMode === "carousel" && (
-        <div className="relative rounded-2xl border border-zinc-200/80 dark:border-white/10 bg-white/70 dark:bg-zinc-900/70 overflow-hidden backdrop-blur-xl shadow-lg p-4 sm:p-6">
-          {/* Top Browser Bar */}
+      {viewMode === "carousel" && screens.length > 0 && (
+        <div className="rounded-2xl border border-zinc-200/80 dark:border-white/10 bg-white/70 dark:bg-zinc-900/70 p-6 backdrop-blur-xl shadow-xl">
+          {/* Top Info Bar */}
           <div className="flex items-center justify-between border-b border-zinc-200 dark:border-white/10 pb-3 mb-4 text-xs font-mono">
-            <div className="flex items-center gap-2">
-              <span className="h-3 w-3 rounded-full bg-red-500/80 inline-block" />
-              <span className="h-3 w-3 rounded-full bg-yellow-500/80 inline-block" />
-              <span className="h-3 w-3 rounded-full bg-emerald-500/80 inline-block" />
-              <span className="ml-2 text-zinc-400 hidden sm:inline">
-                {screens[activeCarouselIdx].simulatedUrl}
-              </span>
-            </div>
+            <span className="text-zinc-500 truncate max-w-[200px] sm:max-w-md">
+              {screens[activeCarouselIdx].simulatedUrl}
+            </span>
             <div className="flex items-center gap-2">
               <span className="rounded bg-emerald-500/10 px-2.5 py-1 text-xs text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-semibold">
                 {screens[activeCarouselIdx].tag}
@@ -168,7 +163,7 @@ export function ImageGallery({ screens, title = "Production Interface Gallery" }
               alt={screens[activeCarouselIdx].title}
               fill
               sizes="(max-width: 1200px) 100vw, 1200px"
-              className="object-cover transition-transform duration-700 group-hover:scale-105"
+              className="object-cover grayscale transition-all duration-500 hover:grayscale-0 group-hover:grayscale-0 group-hover:scale-105"
             />
 
             {/* Navigation Arrows */}
